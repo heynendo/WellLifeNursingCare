@@ -1,0 +1,99 @@
+.contact{
+    margin-top: 80px;
+}
+.contact > .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+}
+.contact > .mid{
+    background-color: var(--color4);
+    min-height: 500px;
+    width: 100vw;
+}
+.contact > .mid > .info-cards{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.contact > .mid > .info-cards > .card{
+    width: 525px;
+}
+.contact > .mid > .info-cards > .card > h2{
+    color: var(--color3);
+    height: 100px;
+}
+.contact > .mid > .info-cards > .card > .break{
+    height: 5px;
+    width: 100%;
+    background-color: var(--color3);
+    margin-bottom: 25px;
+}
+.contact > .mid > .info-cards > .card > .availability{
+    background-color: var(--color3);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact > .mid > .info-cards > .card > .availability > h3{
+    color: var(--color1);
+    text-align: center;
+    font-size: 1.25em;
+    width: 120%;
+}
+.contact > .mid > .info-cards > .card > .availability > svg{
+    height: 80%;
+    align-self: center;
+}
+.contact > .mid > .info-cards > .card > .options{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+}
+.contact > .mid > .info-cards > .card > .options > div{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 50%;
+    background-color: var(--color3);
+}
+.contact > .mid > .info-cards > .card > .options h3{
+    color: var(--color1);
+    width: 75%;
+    height: 50px;
+    justify-content: center;
+}
+.contact > .mid > .info-cards > .card > .options > div svg{
+    color: var(--color1);
+    height: 45px;
+    width: max-content;
+}
+.contact > .mid > .info-cards > .card span{
+    color: var(--color2);
+    height: 50px;
+    font-weight: 700;
+    font-size: 0.9em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact > .mid > .info-cards > .card .phone span{
+    font-size: 1.1em;
+    letter-spacing: 0.3em;
+}
+.contact > .mid > p{
+    color: var(--color3);
+    text-align: center;
+    max-width: 1200px;
+    justify-self: center;
+    margin: 100px 0;
+}
+.contact > .lower{
+    background: var(--color1-gradient);
+    min-height: 500px;
+    width: 100vw;
+}

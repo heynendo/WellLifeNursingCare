@@ -1,0 +1,178 @@
+
+.home{
+    padding-top: 55px;
+}
+.home > .hero{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+    width: 100%;
+    max-width: 1200px;
+    justify-self: center;
+}
+.home > .hero > .left{
+    justify-items: center;
+}
+.home > .hero > .left svg{
+    display: block;
+}
+.home > .hero .title{
+    display: block;
+    overflow-y: hidden;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    color: var(--color1);
+    max-width: 600px;
+    cursor: default;
+    margin: 25px 0;
+}
+.home > .hero > .left > .cta-buttons{
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.home > .hero > .left > .cta-buttons > .more-btn{
+    background-color: var(--color3);
+    border: solid 3px var(--color2);
+    color: var(--color2);
+}
+.home > .hero > .left > .cta-buttons > .more-btn:hover{
+    background-color: var(--color2);
+    color: var(--color3);
+}
+.home > .hero > .right{
+    align-content: center;
+}
+.home > .hero > .right > .headshot{
+    border: solid 5px var(--color2);
+    border-radius: 100%;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    box-shadow: var(--shadow1);
+}
+.home > .mid{
+    background-color: var(--color4);
+}
+.home > .mid > .intro > h3{
+    display: flex;
+    color: var(--color1);
+    width: 100vw;
+    justify-content: center;
+    height: 75px;
+    margin-top: 75px;
+}
+.home > .mid > .intro > p{
+    color: var(--color3);
+    text-align: center;
+    justify-self: center;
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 1200px;
+    margin: 0 25px;
+}
+.home > .mid > .about-cards{
+    display: flex;
+    justify-content: center;
+    gap: 62.5px;
+    margin: 100px 0;
+}
+.home > .mid > .about-cards > .card{
+    display: grid;
+    width: 325px;
+    height: 375px;
+    border-radius: 10px;
+    background: var(--color1-gradient);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+    margin: 7.5px;
+}
+.home > .mid > .about-cards > .card > svg{
+    grid-row: 1;
+    grid-column: 1;
+    width: 75%;
+    height: 75%;
+    margin-top: 25px;
+    justify-self: center;
+    align-self: center;
+    opacity: 0.15;
+    color: var(--color3);
+    z-index: 1;
+}
+.home > .mid > .about-cards > .card > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+}
+.home > .mid > .about-cards > .card > .container > h3{
+    min-height: 75px;
+    text-align: center;
+}
+.home > .mid > .about-cards > .card > .container > p{
+    color: var(--color3);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 15px;
+    min-height: 30%;
+}
+.home > .lower{
+    background: var(--color1-gradient);
+
+}
+.home > .lower > .reviews{
+    display: flex;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin: 50px 0;
+}
+.home > .lower > .reviews > h2{
+    color: var(--color3);
+    width: 325px;
+    text-align: right;
+}
+.home > .lower > .reviews > .break{
+    width: 5px;
+    height: 100%;
+    background-color: var(--color3);
+}
+.home > .lower > .reviews > .main-review{
+    background: var(--color2-gradient);
+    height: 200px;
+    width: 750px;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: grid;
+    color: var(--color3);
+}
+.home > .lower > .reviews > .main-review > .container{
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+}
+.home > .lower > .reviews > .main-review > .container > .head{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    justify-self: center;
+    height: 50px;
+}   
+.home > .lower > .reviews > .main-review > .container > p{
+    width: 80%;
+    justify-self: center;
+}
+.home > .lower > .reviews > .main-review > svg{
+    grid-row: 1;
+    grid-column: 1;
+    height: 175px;
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    opacity: 0.15;
+    z-index: 1;
+}

@@ -1,0 +1,125 @@
+
+.services > .top{
+    min-height: 350px;
+}
+.services > .top > h1{
+    min-height: 150px;
+}
+.services > .mid > .selected-service{
+    width: 90%;
+    max-width: 1200px;
+    background-color: var(--color3);
+    border-radius: 10px;
+    margin: 50px 0;
+    display: block;
+    justify-self: center;
+    padding: 10px 25px;
+}
+.services > .mid > .selected-service > .header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.services > .mid > .selected-service > .header > .left{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.services > .mid > .selected-service > .header > .left > h3{
+    color: var(--color1);
+}
+.services > .mid > .selected-service > .header > .right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.services > .mid > .selected-service > .header > .right > .cost{
+    color: var(--color2);
+    font-weight: 800;
+    font-size: 1em;
+}
+.services > .mid > .selected-service > .header > .right > h3{
+    color: var(--color1);
+}
+.services > .mid > .selected-service > .container{
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+}
+.services > .mid > .selected-service > .container > .left{
+    max-width: 70%;
+}
+.services > .mid > .selected-service > .container > .left > p{
+    color: var(--color1);
+}
+.services > .mid > .selected-service > .container > .right{
+    display: flex;
+}
+.services > .mid > .selected-service > .container > .right > svg{
+    width: 100%;
+}
+.services > .mid > .options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: center;
+    justify-content: center;
+    max-width: 1350px;
+    margin-bottom: 50px;
+}
+.services > .mid > .options > .service{
+    width: 28%;
+    margin: 1.5%;
+    padding: 5px;
+    border: 2px solid #E5F0F600;
+    cursor: pointer;
+    transition: 0.1s ease-in;
+}
+.services > .mid > .options > .service:hover{
+    background: var(--color4);
+    border: 2px solid #E5F0F6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+}
+.services > .mid > .options > .service > h3{
+    min-height: 30px;
+}
+.services > .mid > .options > .service > p{
+    color: var(--color3);
+    font-size: 0.9em;
+    min-height: 60px;
+}
+.services > .mid > button{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    margin-bottom: 100px;
+    padding: 0 10vw;
+    cursor: pointer;
+}
+/**
+update so the payment types wrap but the h2 label height adjusts to fit the height of the listed payment types
+*/
+.services > .lower > .payment-options{
+    display: flex;
+    min-height: 100px;
+    gap: 50px;
+    margin: 50px;
+    align-items: center;
+    justify-self: center;
+}
+.services > .lower > .payment-options > h2{
+    color: var(--color3);
+    max-width: 300px;
+    text-align: end;
+    flex-shrink: 0;
+}
+.services > .lower > .payment-options > .break{
+    height: 100px;
+    width: 5px;
+    background-color: var(--color3);
+}
+.services > .lower > .payment-options > .card{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}

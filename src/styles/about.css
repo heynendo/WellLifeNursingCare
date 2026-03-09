@@ -1,0 +1,63 @@
+.about > .top > h1{
+    max-width: 1200px;
+    text-align: center;
+}
+.about > .top > .bio{
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 50px 0;
+    gap: 50px;
+}
+.about > .top > .bio > .container{
+    color: var(--color1);
+}
+.about > .top > .bio > .container > h4{
+    color: var(--color1);
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+}
+.about > .mid > .about-cards{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    justify-self: center;
+}
+.about > .mid > .about-cards .card{
+    background: var(--color3-gradient-L);
+    height: 225px;
+    margin-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.about > .mid > .about-cards .card:nth-child(even){
+    background: var(--color3-gradient-R);
+    flex-direction: row-reverse;
+}
+.about > .mid > .about-cards .card > svg{
+    color: var(--color1);
+    height: 60%;
+    width: 60%;
+    margin: 0 25px;
+}
+.about > .mid > .about-cards .card > .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+.about > .mid > .about-cards .card > .container > h3{
+    color: var(--color2);
+    justify-content: end;
+}
+.about > .mid > .about-cards .card:nth-child(even) > .container > h3{
+    justify-content: start;
+}
+.about > .mid > .about-cards .card > .container > p{
+    color: var(--color1);
+    text-align: end;
+}
+.about > .mid > .about-cards .card:nth-child(even) > .container > p{
+    text-align: start;
+}
