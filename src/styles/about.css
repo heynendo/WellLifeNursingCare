@@ -1,46 +1,73 @@
 .about > .top > h1{
     max-width: 1200px;
     text-align: center;
+    min-height: 175px;
+    margin: 0 25px;
 }
 .about > .top > .bio{
     display: flex;
     align-items: center;
     max-width: 1400px;
-    margin: 50px 0;
+    margin: 50px;
     gap: 50px;
+}
+.about > .top > .bio > .headshot{
+    min-width: 250px;
+    max-width: 400px;
+    border-radius: 0;
 }
 .about > .top > .bio > .container{
     color: var(--color1);
 }
-.about > .top > .bio > .container > h4{
+.about > .top > .bio > .container > .head{
+    display: flex;
+    gap: 10px;
+}
+.about > .top > .bio > .container > .head > h4{
     color: var(--color1);
     font-weight: 900;
     font-size: 20px;
     line-height: 24px;
 }
+.about > .top > .bio > .container > .head > .break{
+    height: 25px;
+    width: 4px;
+    background-color: var(--color1);
+}
+.about > .top > .bio > .container > .head > .credentials{
+    font-style: italic;
+    font-weight: 600;
+}
 .about > .mid > .about-cards{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin: 125px 0;
     justify-self: center;
+    row-gap: 75px;
 }
 .about > .mid > .about-cards .card{
     background: var(--color3-gradient-L);
     height: 225px;
-    margin-bottom: 75px;
     display: flex;
     align-items: center;
     justify-content: end;
+    padding-left: 15vw;
+    margin-right: 15vw;
 }
 .about > .mid > .about-cards .card:nth-child(even){
     background: var(--color3-gradient-R);
     flex-direction: row-reverse;
+    padding-right: 15vw;
+    padding-left: 0vw;
+    margin-right: 0vw;
+    margin-left: 15vw;
 }
 .about > .mid > .about-cards .card > svg{
     color: var(--color1);
     height: 60%;
     width: 60%;
     margin: 0 25px;
+    min-width: 150px;
 }
 .about > .mid > .about-cards .card > .container{
     display: flex;
@@ -50,9 +77,11 @@
 .about > .mid > .about-cards .card > .container > h3{
     color: var(--color2);
     justify-content: end;
+    text-align: end;
 }
 .about > .mid > .about-cards .card:nth-child(even) > .container > h3{
     justify-content: start;
+    text-align: start;
 }
 .about > .mid > .about-cards .card > .container > p{
     color: var(--color1);
@@ -60,4 +89,76 @@
 }
 .about > .mid > .about-cards .card:nth-child(even) > .container > p{
     text-align: start;
+}
+@media (max-width: 900px){
+    .about > .top > h1{
+        min-height: 250px;
+    }
+    .about > .top > .bio{
+        flex-direction: column;
+        margin: 0;
+        gap: 25px;
+    }
+    .about > .top > .bio > .container{
+        margin: 0 25px;
+    }
+    .about > .top > .bio > .container > .head{
+        flex-direction: column;
+        align-items: center;
+    }
+    .about > .top > .bio > .container > .head > .break{
+        height: 3px;
+        width: 300px;
+    }
+    .about > .mid > .about-cards .card{
+        background: var(--color3-gradient-L);
+        height: auto;
+        min-height: 225px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-left: 0vw;
+        margin-right: 0vw;
+    }
+    .about > .mid > .about-cards .card:nth-child(even){
+        background: var(--color3-gradient-R);
+        flex-direction: row-reverse;
+        padding-right: 0vw;
+        padding-left: 0vw;
+        margin-right: 0vw;
+        margin-left: 0vw;
+    }
+    .about > .mid > .about-cards .card > .container > p{
+        padding-left: 10vw;
+    }
+    .about > .mid > .about-cards .card:nth-child(even) > .container > p{
+        padding-right: 10vw;
+        padding-left: 0vw;
+    }
+}
+@media (max-width: 700px){
+    .about > .top > h1{
+        min-height: 175px;
+    }
+    .about > .mid > .about-cards{
+        display: flex;
+        flex-direction: column;
+        margin: 75px 0;
+        justify-self: center;
+        row-gap: 50px;
+    }
+    .about > .mid > .about-cards .card > svg{
+        /*color: var(--color1);
+        height: 50%;
+        width: 50%;
+        margin: 0 15px;
+        min-width: 100px;*/
+        display: none;
+    }
+    .about > .mid > .about-cards .card > .container{
+        padding: 0 5vw;
+    }
+    .about > .mid > .about-cards .card > .container > p{
+        padding: 0;
+    }
 }

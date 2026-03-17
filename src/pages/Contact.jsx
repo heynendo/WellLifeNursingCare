@@ -17,12 +17,16 @@ export default function Contact(){
                         <h2>Contact Options</h2>
                         <div className='break'/>
                         <div className='options'>
-                            <div className='phone'>
+                            <div className='phone'
+                                onClick={() => window.location.href = 'tel:7089298515'}
+                            >
                                 <h3>Phone</h3>
                                 <Contact1 rotation='45'/>
                                 <span>708-929-8515</span>
                             </div>
-                            <div className='email'>
+                            <div className='email'
+                                onClick={() => window.location.href = 'mailto:info@welllifenursingcare.com'}
+                            >
                                 <h3>Email</h3>
                                 <Contact1 rotation='45'/>
                                 <span>info@welllifenursingcare.com</span>
@@ -38,7 +42,7 @@ export default function Contact(){
                         </div>
                     </div>
                 </div>
-                <p>Getting in touch is easy. Use the contact form, send an email, or call during available hours. Now explain more info about preferences of contact and availability. This would be a good place to add any other info you think is important for clients to know that they should include in their message that isn’t already specified. </p>
+                <p>Getting in touch is easy. Use the contact form, send an email, or call during available hours. Now explain more info about preferences of contact and availability. This would be a good place to add any other info you think is important for clients to know that they should include in their message that isn't already specified. </p>
             </div>
             <div className="lower">
                 <ContactForm />

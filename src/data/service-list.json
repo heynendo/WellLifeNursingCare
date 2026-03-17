@@ -19,5 +19,47 @@
     "shortDesc": "Comprehensive one-on-one health evaluation to understand your current wellness needs.",
     "longDesc": "Our health assessment service offers a detailed review of your vital signs, medical history, current symptoms, and lifestyle factors. Conducted by a licensed nurse, this evaluation helps identify areas of concern and creates a foundation for a personalized care plan. Assessments can be done virtually via video call or in person at your home for your comfort and convenience.",
     "cost": 150
+  },
+  {
+    "id": "wound-care",
+    "title": "Wound Care",
+    "shortDesc": "Professional wound assessment and treatment to promote healing and prevent infection.",
+    "longDesc": "Our wound care service provides expert assessment, cleaning, dressing, and monitoring of acute and chronic wounds. This service can be performed in the comfort of your home, eliminating the need for frequent clinic visits. We help patients and caregivers understand proper wound care techniques and signs of infection to watch for, empowering you to take an active role in recovery.",
+    "cost": 120
+  },
+  {
+    "id": "medication-management",
+    "title": "Medication Management",
+    "shortDesc": "Personalized medication review and education to keep your health on track.",
+    "longDesc": "Managing multiple medications can be overwhelming. Our medication management service includes a thorough review of your current prescriptions, over-the-counter drugs, and supplements. We identify potential interactions, clarify dosing schedules, and provide easy-to-follow instructions. This service is available virtually or in-home, making it convenient no matter your situation.",
+    "cost": 95
+  },
+  {
+    "id": "health-assessment",
+    "title": "Health Assessment",
+    "shortDesc": "Comprehensive one-on-one health evaluation to understand your current wellness needs.",
+    "longDesc": "Our health assessment service offers a detailed review of your vital signs, medical history, current symptoms, and lifestyle factors. Conducted by a licensed nurse, this evaluation helps identify areas of concern and creates a foundation for a personalized care plan. Assessments can be done virtually via video call or in person at your home for your comfort and convenience.",
+    "cost": 150
+  },
+  {
+    "id": "wound-care",
+    "title": "Wound Care",
+    "shortDesc": "Professional wound assessment and treatment to promote healing and prevent infection.",
+    "longDesc": "Our wound care service provides expert assessment, cleaning, dressing, and monitoring of acute and chronic wounds. This service can be performed in the comfort of your home, eliminating the need for frequent clinic visits. We help patients and caregivers understand proper wound care techniques and signs of infection to watch for, empowering you to take an active role in recovery.",
+    "cost": 120
+  },
+  {
+    "id": "medication-management",
+    "title": "Medication Management",
+    "shortDesc": "Personalized medication review and education to keep your health on track.",
+    "longDesc": "Managing multiple medications can be overwhelming. Our medication management service includes a thorough review of your current prescriptions, over-the-counter drugs, and supplements. We identify potential interactions, clarify dosing schedules, and provide easy-to-follow instructions. This service is available virtually or in-home, making it convenient no matter your situation.",
+    "cost": 95
+  },
+  {
+    "id": "health-assessment",
+    "title": "Health Assessment",
+    "shortDesc": "Comprehensive one-on-one health evaluation to understand your current wellness needs.",
+    "longDesc": "Our health assessment service offers a detailed review of your vital signs, medical history, current symptoms, and lifestyle factors. Conducted by a licensed nurse, this evaluation helps identify areas of concern and creates a foundation for a personalized care plan. Assessments can be done virtually via video call or in person at your home for your comfort and convenience.",
+    "cost": 150
   }
 ]

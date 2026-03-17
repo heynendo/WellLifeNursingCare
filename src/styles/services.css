@@ -1,4 +1,3 @@
-
 .services > .top{
     min-height: 350px;
 }
@@ -14,6 +13,7 @@
     display: block;
     justify-self: center;
     padding: 10px 25px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
 }
 .services > .mid > .selected-service > .header{
     display: flex;
@@ -63,13 +63,13 @@
     flex-wrap: wrap;
     justify-self: center;
     justify-content: center;
-    max-width: 1350px;
+    max-width: 1325px;
     margin-bottom: 50px;
 }
 .services > .mid > .options > .service{
     width: 28%;
     margin: 1.5%;
-    padding: 5px;
+    padding: 10px;
     border: 2px solid #E5F0F600;
     cursor: pointer;
     transition: 0.1s ease-in;
@@ -87,6 +87,11 @@
     color: var(--color3);
     font-size: 0.9em;
     min-height: 60px;
+}
+.services > .mid > .options > .row-break{
+    width: 85%;
+    border-bottom: solid 2px var(--color3);
+    opacity: 0.75;
 }
 .services > .mid > button{
     display: flex;
@@ -114,12 +119,63 @@ update so the payment types wrap but the h2 label height adjusts to fit the heig
     flex-shrink: 0;
 }
 .services > .lower > .payment-options > .break{
-    height: 100px;
+    height: 150px;
     width: 5px;
     background-color: var(--color3);
 }
-.services > .lower > .payment-options > .card{
+.services > .lower > .payment-options .option-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.services > .lower > .payment-options .option-cards > .card{
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 15px;
+}
+@media (max-width: 1000px){
+    .services > .lower > .payment-options{
+        flex-direction: column;
+        gap: 25px;
+    }
+    .services > .lower > .payment-options > h2{
+        text-align: center;
+        max-width: 500px;
+    }
+    .services > .lower > .payment-options > .break{
+        height: 5px;
+        width: 80vw;
+    }
+    .services > .lower > .payment-options .option-cards{
+        width: 75vw;
+        justify-content: center;
+    }
+    .services > .lower > .payment-options > .option-cards > .card h3{
+        font-size: 1.25em;
+    }
+}
+@media (max-width: 600px){
+    .services > .mid > .selected-service > .header{
+        flex-direction: column;
+    }
+    .services > .mid > .selected-service > .container{
+        margin-top: 15px;
+    }
+    .services > .mid > .selected-service > .container > .left{
+        max-width: 100%;
+    }
+    .services > .mid > .selected-service > .bottom-cost{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 25px;
+    }
+    .services > .mid > .selected-service > .bottom-cost > .cost{
+        color: var(--color2);
+        font-weight: 800;
+        font-size: 1em;
+    }
+    .services > .mid > .selected-service > .bottom-cost > h3{
+        color: var(--color1);
+    }
 }

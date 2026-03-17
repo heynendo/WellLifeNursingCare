@@ -1,34 +1,49 @@
-import { Contact2, HeartMedical1, MedicalBadge1, Stethoscope1 } from "icons-by-heynendo"
+import { Contact1, Contact2, HeartMedical1, MedicalBadge1, Stethoscope1 } from "icons-by-heynendo"
 import WellLifeLogo1 from "../components/WellLifeLogo1"
 import '../styles/home.css'
 import Footer from "../components/Footer"
+import { getWindowWidth } from "../functions/GetWindowWidth"
+import { useNavigate } from "react-router-dom"
 
 export default function Home(){
+
+    const navigate = useNavigate()
+
+    const width = getWindowWidth()
 
     return(
         <div className="home page-layout">
             <div className="hero">
                 <div className="left">
-                    <WellLifeLogo1 size="450px"/>
+                    {width > 700 ? <WellLifeLogo1 size="450px"/> : <h1>Well Life Nursing Care</h1>}
                     <span className="title">
                         Your Trusted Guide Through Every Health Decision
                     </span>
+                    {width < 700 &&
+                        <img className="headshot" src="/headshot.png"/>
+                    }
                     <div className="cta-buttons">
-                        <button className="button-lg contact-btn">
+                        <button className="button-lg contact-btn"
+                            onClick={() => navigate('/contact')}
+                        >
                             Contact Now
-                            <Contact2
+                            <Contact1
                                 size="25px"
                                 rotation="45"
                             />
                         </button>
-                        <button className="button-lg more-btn">
+                        <button className="button-lg more-btn"
+                            onClick={() => navigate('/about')}
+                        >
                             Learn More
                         </button>   
                     </div>
                 </div>
+                {width > 700 &&
                 <div className="right">
                     <img className="headshot" src="/headshot.png"/>
                 </div>
+                }
             </div>
             <div className="mid">
                 <div className="intro">
@@ -54,7 +69,9 @@ export default function Home(){
                         <div className="container">
                             <h3>More</h3>
                             <p>Check out the about page to learn more information.</p>
-                            <button><h3>About Well Life</h3></button>
+                            <button onClick={() => navigate('/about')}>
+                                <h3>About Well Life</h3>
+                            </button>
                         </div>
                         <Stethoscope1 />
                     </div>

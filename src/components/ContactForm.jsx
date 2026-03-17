@@ -1,42 +1,8 @@
-/*import '../styles/contact-form.css'
-
-export default function ContactForm(){
-    return(
-        <form className='contact-form'>
-            <div className='container-1'>
-                <label>Full Name</label>
-                <input />
-            </div>
-            <div className='container-1'>
-                <label>Phone Number</label>
-                <input />
-            </div>
-            <div className='container-1'>
-                <label>Email Address</label>
-                <input />
-            </div>
-            <div className='container-1'>
-                <label>Preferred Contact</label>
-                <input />
-            </div>
-            <div className='container-2'>
-                <label>Service(s) of Interest</label>
-                <input />
-            </div>
-            <div className='container-2'>
-                <label>What's most important to you on your health journey?</label>
-                <textarea/>
-            </div>
-            <div className='container-2'>
-                <label>Message</label>
-                <textarea/>
-            </div>
-            <button><h3>Send</h3></button>
-        </form>
-    )
-}*/
 import { useState } from "react"
 import '../styles/contact-form.css'
+import Dropdown from "./Dropdown"
+import { Arrow1 } from "icons-by-heynendo"
+import '../styles/custom-dropdown.css'
 
 const SERVICES = [
   "Primary Care",
@@ -47,9 +13,10 @@ const SERVICES = [
   "Preventive Care",
   "Women's Health",
   "Pediatrics",
+  "Other"
 ]
 
-const PREFERRED_CONTACT_OPTIONS = ["Email", "Phone", "Text"]
+const PREFERRED_CONTACT_OPTIONS = ["Email", "Text", "Call"]
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -116,7 +83,7 @@ export default function ContactForm() {
             />
         </div>
         <div className="container-1">
-            <label>Preferred Contact</label>
+            {/*<label>Preferred Contact</label>
             <select
                 name="preferredContact"
                 value={formData.preferredContact}
@@ -127,7 +94,9 @@ export default function ContactForm() {
                 {PREFERRED_CONTACT_OPTIONS.map((opt) => (
                 <option key={opt} value={opt}>{opt}</option>
                 ))}
-            </select>
+            </select>*/}
+            <label>Preferred Contact</label>
+            <Dropdown />
         </div>
         <div className="container-2">
             <label>Service(s) of Interest</label>

@@ -3,7 +3,10 @@ import { Link } from "react-router-dom"
 import { motion, AnimatePresence } from "motion/react"
 import '../styles/navigation.css'
 import WellLifeLogo1 from "./WellLifeLogo1"
-import { Contact2, Exit2, HamburgerMenu2, MedicalBadge1, Profile2 } from "icons-by-heynendo"
+import { Contact1, Contact2, Exit2, HamburgerMenu2, MedicalBadge1, Profile2 } from "icons-by-heynendo"
+import { getWindowWidth } from "../functions/GetWindowWidth"
+import HouseIcon from "./logos/HouseIcon"
+import ProfileIcon from "./logos/ProfileIcon"
 
 export default function Navigation(){
 
@@ -15,20 +18,11 @@ export default function Navigation(){
     }
 
     const pathname = window.location.pathname.replace("/", "")
-    const currentPage = pathname === "" ? "Home" : pathname
+    const currentPage = pathname === "" ? "Home" : 
+        pathname.charAt(0).toUpperCase() + pathname.slice(1).toLowerCase()
 
-    const [width, setWidth] = useState(window.innerWidth)
+    const width = getWindowWidth()
     const [navOptions, setNavOptions] = useState(false)
-    
-    useEffect(() => {
-        const handleResize = () =>
-        setWidth(window.innerWidth)
-
-        window.addEventListener("resize", handleResize)
-
-        return () =>
-        window.removeEventListener("resize", handleResize)
-    }, [])
 
     useEffect(() => {
         if (width > 700){
@@ -43,7 +37,7 @@ export default function Navigation(){
             const mid = document.querySelector(".mid")
             if (!mid) return
             const rect = mid.getBoundingClientRect()
-            setColorSwitch(rect.top <= 0)
+            setColorSwitch(rect.top <= 55)
         }
 
         window.addEventListener("scroll", handleScroll)
@@ -83,26 +77,23 @@ export default function Navigation(){
                 {width > 700 ?
                 <>
                 <Link to='/'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'Home' ? 'selected' : ''}>Home</h4></Link>
-                <Link to='/about'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'about' ? 'selected' : ''}>About</h4></Link>
-                <Link to='/services'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'services' ? 'selected' : ''}>Services</h4></Link>
-                <Link to='/contact'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'contact' ? 'selected' : ''}>Contact</h4></Link>
+                <Link to='/about'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'About' ? 'selected' : ''}>About</h4></Link>
+                <Link to='/services'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'Services' ? 'selected' : ''}>Services</h4></Link>
+                <Link to='/contact'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'Contact' ? 'selected' : ''}>Contact</h4></Link>
                 </>
                 :
-                <>
-                <motion.div
-                    className="mobile"
-                    animate={{ width: navOptions ? "38.5vw" : "25vw" }}
-                    transition={{ type: "spring", stiffness: 200, damping: 25 }}
+                <div className="mobile"
+                    style={{justifyContent: navOptions ? 'space-between' : 'end', 
+                            width: navOptions ? 'calc(45vw - 50px)' : '55vw'}}
                 >
-                    <div style={{ width: "30px", display: "flex", justifyContent: "end" }}>
-                        <AnimatePresence mode="wait">
+                    <AnimatePresence mode="wait">
                         {navOptions && 
                             <motion.div
+                                className="icon-container"
                                 key="exit-icon"
-                                initial={{ x: -20, opacity: 0 }}
-                                animate={{ x: 0, opacity: 1 }}
-                                exit={{ x: -20, opacity: 0 }}
-                                transition={{ duration: 0.2 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.3 } }}
+                                exit={{ opacity: 0, transition: { duration: 0.2 } }}
                             >
                                 <Exit2
                                     color={colorSwitch ? colorSet.color3 : colorSet.color2}
@@ -112,30 +103,26 @@ export default function Navigation(){
                                 />
                             </motion.div>
                         }
-                        </AnimatePresence>
-                    </div>
+                    </AnimatePresence>
+
+                    <motion.h4
+                        key={navOptions ? "nav-open" : "nav-closed"}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.3 } }}
+                        exit={{ opacity: 0, transition: { duration: 0.2 } }}
+                        style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}}
+                    >
+                        {currentPage}
+                    </motion.h4>
 
                     <AnimatePresence mode="wait">
-                        <motion.h4
-                            key={currentPage}
-                            initial={{ y: 8, opacity: 0 }}
-                            animate={{ y: 0, opacity: 1 }}
-                            exit={{ y: -8, opacity: 0 }}
-                            transition={{ duration: 0.2 }}
-                            style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} 
-                        >
-                            {currentPage}
-                        </motion.h4>
-                    </AnimatePresence>
-                    <div style={{ width: "30px", display: "flex", justifyContent: "center" }}>
-                        <AnimatePresence mode="wait">
                         {!navOptions && 
                             <motion.div
+                                className="icon-container"
                                 key="hamburger-icon"
-                                initial={{ x: 20, opacity: 0 }}
-                                animate={{ x: 0, opacity: 1 }}
-                                exit={{ x: 20, opacity: 0 }}
-                                transition={{ duration: 0.2 }}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1, transition: { duration: 0.2, delay: 0.3 } }}
+                                exit={{ opacity: 0, transition: { duration: 0.2 } }}
                             >
                                 <HamburgerMenu2
                                     color={colorSwitch ? colorSet.color3 : colorSet.color2}
@@ -145,58 +132,8 @@ export default function Navigation(){
                                 />
                             </motion.div>
                         }
-                        </AnimatePresence>
-                    </div>
-                </motion.div>
-                {/*<motion.div
-                    className="mobile"
-                    animate={{ width: navOptions ? "38.5vw" : "25vw" }}
-                    transition={{ type: "spring", stiffness: 200, damping: 25 }}
-                >
-                    <AnimatePresence mode="wait">
-                    {navOptions && 
-                    <motion.div
-                        key="exit-icon"
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1, transition: { duration: 0.25, delay: 0.25 }  }}
-                        exit={{ opacity: 0, transition: { duration: 0.25} }}
-                    >
-                        <Exit2
-                            color="#E5F0F6"
-                            size="20px"
-                            style={{ cursor: "pointer" }}
-                            onClick={() => setNavOptions(prev => !prev)}
-                        />
-                    </motion.div>
-                    }
                     </AnimatePresence>
-                    <motion.h4
-                        animate={{ x: navOptions ? 0 : 0 }}
-                        layout
-                        transition={{ type: "spring", stiffness: 200, damping: 25 }}
-                    >
-                        {currentPage}
-                    </motion.h4>
-                    <AnimatePresence mode="wait">
-                    {!navOptions && 
-                    <motion.div
-                        key="hamburger-icon"
-                        initial={{ x: 20, opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        exit={{ x: 20, opacity: 0 }}
-                        transition={{ duration: 0.25 }}
-                    >
-                        <HamburgerMenu2
-                            color="#E5F0F6"
-                            size="30px"
-                            style={{ cursor: "pointer" }}
-                            onClick={() => setNavOptions(prev => !prev)}
-                        />
-                    </motion.div>
-                    }
-                    </AnimatePresence>
-                </motion.div>*/}
-                </>
+                </div>
                 }
             </div>
         </header>
@@ -226,22 +163,28 @@ export default function Navigation(){
                     <Link to='/'
                     style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}}
                     >
-
+                        <HouseIcon 
+                            className='nav-icons'
+                            size="25px"
+                            color="white"
+                        />
                         <h4>Home</h4>
                     </Link>
                     }
-                    {currentPage !== 'about' &&
-                    <Link to='/'
+                    {currentPage !== 'About' &&
+                    <Link to='/about'
                     style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}} 
                     >
-                        <Profile2 
+                        <ProfileIcon 
                             className='nav-icons'
+                            size="25px"
+                            color="white"
                         />
                         <h4>About</h4>
                     </Link>
                     }
-                    {currentPage !== 'services' &&
-                    <Link to='/'
+                    {currentPage !== 'Services' &&
+                    <Link to='/services'
                     style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}}
                     >
                         <MedicalBadge1
@@ -250,11 +193,11 @@ export default function Navigation(){
                         <h4>Services</h4>
                     </Link>
                     }
-                    {currentPage !== 'contact' &&
-                    <Link to='/'
+                    {currentPage !== 'Contact' &&
+                    <Link to='/contact'
                     style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}}
                     >
-                        <Contact2 
+                        <Contact1 
                             rotation="45"
                             className='nav-icons'
                         />

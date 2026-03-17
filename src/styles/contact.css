@@ -1,11 +1,9 @@
-.contact{
-    margin-top: 80px;
-}
+
 .contact > .top{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 200px;
+    min-height: 225px;
 }
 .contact > .mid{
     background-color: var(--color4);
@@ -15,10 +13,12 @@
 .contact > .mid > .info-cards{
     display: flex;
     justify-content: center;
-    gap: 100px;
+    column-gap: 100px;
+    flex-wrap: wrap;
 }
 .contact > .mid > .info-cards > .card{
-    width: 525px;
+    max-width: 525px;
+    width: 90vw;
 }
 .contact > .mid > .info-cards > .card > h2{
     color: var(--color3);
@@ -42,6 +42,7 @@
     text-align: center;
     font-size: 1.25em;
     width: 120%;
+    margin: 0 15px;
 }
 .contact > .mid > .info-cards > .card > .availability > svg{
     height: 80%;
@@ -57,8 +58,10 @@
     display: flex;
     flex-wrap: wrap;
     height: 100px;
-    width: 50%;
+    width: 100%;
+    max-width: 250px;
     background-color: var(--color3);
+    cursor: pointer;
 }
 .contact > .mid > .info-cards > .card > .options h3{
     color: var(--color1);
@@ -90,10 +93,48 @@
     text-align: center;
     max-width: 1200px;
     justify-self: center;
-    margin: 100px 0;
+    margin: 100px 50px;
 }
 .contact > .lower{
     background: var(--color1-gradient);
     min-height: 500px;
     width: 100vw;
+}
+@media (max-width: 600px){
+    .contact > .mid > .info-cards > .card > .options > div{
+        max-width: none;
+    }
+    .contact > .mid > .info-cards > .card > .options{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 700px){
+    .contact > .top > h1{
+        min-height: 100px;
+    }
+    .contact > .top > h3{
+        font-size: 1.25em;
+        margin: 0 25px;
+    }
+    .contact > .mid > p{
+        margin: 50px 25px;
+    }
+    .contact > .mid > .info-cards > .card > .availability > h3{
+        font-size: 1em;
+    }
+    .contact > .mid > .info-cards > .card > .options > div{
+        height: 125px;
+        justify-content: space-around;
+    }
+    .contact > .mid > .info-cards > .card > .options h3{
+        color: var(--color1);
+        width: 40%;
+        height: 75px;
+        justify-content: center;
+    }
+    .contact > .mid > .info-cards > .card > .options > div svg{
+        color: var(--color1);
+        height: 60px;
+        aspect-ratio: 1;
+    }
 }
