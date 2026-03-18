@@ -127,6 +127,7 @@ button:hover > h3{
   color: var(--color1);
   max-width: 1200px;
   text-align: center;
+  margin: 0 50px;
 }
 .page-layout > .mid{
   background-color: var(--color4);
@@ -140,6 +141,8 @@ button:hover > h3{
   }
   h1{
     font-size: 2em;
+    text-align: center;
+    margin: 0 25px;
   }
   .page-layout{
     padding-top: 75px;

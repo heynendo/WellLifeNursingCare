@@ -2,11 +2,11 @@ import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 import { motion, AnimatePresence } from "motion/react"
 import '../styles/navigation.css'
-import WellLifeLogo1 from "./WellLifeLogo1"
+import WellLifeLogo1 from "./icons/WellLifeLogo1"
 import { Contact1, Contact2, Exit2, HamburgerMenu2, MedicalBadge1, Profile2 } from "icons-by-heynendo"
 import { getWindowWidth } from "../functions/GetWindowWidth"
-import HouseIcon from "./logos/HouseIcon"
-import ProfileIcon from "./logos/ProfileIcon"
+import HouseIcon from "./icons/HouseIcon"
+import ProfileIcon from "./icons/ProfileIcon"
 
 export default function Navigation(){
 

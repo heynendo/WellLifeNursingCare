@@ -1,9 +1,10 @@
 import { Contact1, Contact2, HeartMedical1, MedicalBadge1, Stethoscope1 } from "icons-by-heynendo"
-import WellLifeLogo1 from "../components/WellLifeLogo1"
+import WellLifeLogo1 from "../components/icons/WellLifeLogo1"
 import '../styles/home.css'
 import Footer from "../components/Footer"
 import { getWindowWidth } from "../functions/GetWindowWidth"
 import { useNavigate } from "react-router-dom"
+import { motion } from "framer-motion"
 
 export default function Home(){
 
@@ -51,30 +52,48 @@ export default function Home(){
                     <p>I believe everyone deserves a healthcare advocate; someone who takes the time to listen, explain your options clearly, and help you navigate the complexities of the medical world. I can help with hands-on care at home, guidance finding the right specialist, or just someone to answer your health questions without judgment.</p>
                 </div>
                 <div className="about-cards">
-                    <div className="card">
-                        <div className="container">
-                            <h3>In-Home or Virtual Care</h3>
-                            <p>Healthcare on your terms. I offer in-person visits throughout [Chicagoland area? Or more specific?] and virtual consultations for clients nationwide. Whether you prefer face-to-face care or the ease of an online appointment, I'm ready to help when and where you need it.</p>
-                        </div>
-                        <MedicalBadge1 />
-                    </div>
-                    <div className="card">
-                        <div className="container">
-                            <h3>Concierge & Medical Services</h3>
-                            <p>I provide the full spectrum of nursing support - clinical services like lab draws and post-op care, plus the guidance you need to find good doctors and navigate the healthcare system. Consider me your all-in-one healthcare resource.</p>
-                        </div>
-                        <HeartMedical1 />
-                    </div>
-                    <div className="card">
-                        <div className="container">
-                            <h3>More</h3>
-                            <p>Check out the about page to learn more information.</p>
-                            <button onClick={() => navigate('/about')}>
-                                <h3>About Well Life</h3>
-                            </button>
-                        </div>
-                        <Stethoscope1 />
-                    </div>
+                    {[
+                        {
+                            title: "In-Home or Virtual Care",
+                            text: "Healthcare on your terms. I offer in-person visits throughout [Chicagoland area? Or more specific?] and virtual consultations for clients nationwide. Whether you prefer face-to-face care or the ease of an online appointment, I'm ready to help when and where you need it.",
+                            icon: <MedicalBadge1 />
+                        },
+                        {
+                            title: "Concierge & Medical Services",
+                            text: "I provide the full spectrum of nursing support - clinical services like lab draws and post-op care, plus the guidance you need to find good doctors and navigate the healthcare system. Consider me your all-in-one healthcare resource.",
+                            icon: <HeartMedical1 />
+                        },
+                        {
+                            title: "More",
+                            text: "Check out the about page to learn more information.",
+                            icon: <Stethoscope1 />,
+                            button: true
+                        }
+                    ].map((card, index) => (
+                        <motion.div
+                            className="card"
+                            key={index}
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{
+                                duration: 0.7,
+                                delay: index * 0.15,
+                                ease: "easeOut"
+                            }}
+                            viewport={{ once: true }}
+                        >
+                            <div className="container">
+                                <h3>{card.title}</h3>
+                                <p>{card.text}</p>
+                                {card.button && (
+                                    <button onClick={() => navigate('/about')}>
+                                        <h3>About Well Life</h3>
+                                    </button>
+                                )}
+                            </div>
+                            {card.icon}
+                        </motion.div>
+                    ))}
                 </div>
             </div>
             <div className="lower">

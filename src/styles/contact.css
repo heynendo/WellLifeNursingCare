@@ -61,7 +61,6 @@
     width: 100%;
     max-width: 250px;
     background-color: var(--color3);
-    cursor: pointer;
 }
 .contact > .mid > .info-cards > .card > .options h3{
     color: var(--color1);
@@ -71,7 +70,7 @@
 }
 .contact > .mid > .info-cards > .card > .options > div svg{
     color: var(--color1);
-    width: max-content;
+    aspect-ratio: 1;
     align-self: center;
 }
 .contact > .mid > .info-cards > .card span{
@@ -83,6 +82,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.contact > .mid > .info-cards > .card span:hover{
+    font-weight: 800;
+    padding-bottom: 3px;
 }
 .contact > .mid > .info-cards > .card .phone span{
     font-size: 1.1em;

@@ -1,6 +1,7 @@
 import { FingerPrint1, HeartMedical1, MedicalBadge1, PiggyBank3 } from 'icons-by-heynendo'
 import Footer from '../components/Footer'
 import '../styles/about.css'
+import { motion } from 'framer-motion'
 
 export default function About(){
     return(
@@ -24,43 +25,53 @@ export default function About(){
             <div className='mid'>
                 <div className='about-cards'>
                     <div className='card'>
-                        <div/>
-                        <div className='container'>
+                        <motion.div className='container'
+                            initial={{ opacity: 0, x: '-5vw' }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.75, ease: 'easeOut' }}
+                            viewport={{ once: true }}
+                        >
                             <h3>In-Person or Virtual Care, Your Choice</h3>
                             <p>Healthcare on your terms. I offer in-person visits throughout [Chicagoland area? Or more specific?] and virtual consultations for clients nationwide. Whether you prefer face-to-face care or the ease of an online appointment, I'm ready to help when and where you need it.</p>
                             <div/>
-                        </div>
+                        </motion.div>
                         <MedicalBadge1 />
-                        <div/>
                     </div>
                     <div className='card'>
-                        <div/>
-                        <div className='container'>
+                        <motion.div className='container'
+                            initial={{ opacity: 0, x: '5vw' }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.75, ease: 'easeOut' }}
+                            viewport={{ once: true }}
+                        >
                             <h3>Clinical Care and Healthcare Navigation</h3>
                             <p>I provide the full spectrum of nursing support - clinical services like lab draws and post-op care, plus the guidance you need to find good doctors and navigate the healthcare system. Consider me your all-in-one healthcare resource.</p>
-                        </div>
+                        </motion.div>
                         <HeartMedical1 />
-                        <div/>
                     </div>
                     <div className='card'>
-                        <div/>
-                        <div className='container'>
+                        <motion.div className='container'
+                            initial={{ opacity: 0, x: '-5vw' }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.75, ease: 'easeOut' }}
+                            viewport={{ once: true }}
+                        >
                             <h3>Simple Transparent Pricing</h3>
                             <p>No insurance headaches, no surprise bills, no hidden fees. All services are straightforward cash-pay rates, so you know exactly what you're paying. With Well Life you will receive quality care without delays and added confusion. Lab tests and diagnostics are billed directly to your insurance when applicable.</p>
-                        </div>
+                        </motion.div>
                         <PiggyBank3 />
-                        <div/>
                     </div>
                     <div className='card'>
-                        {/**update to use placeholder divs as our gradient 
-                         * width going to the end of the page*/}
-                        <div/>
-                        <div className='container'>
+                        <motion.div className='container'
+                            initial={{ opacity: 0, x: '5vw' }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.75, ease: 'easeOut' }}
+                            viewport={{ once: true }}
+                        >
                             <h3>Personalized Care for Every Age</h3>
                             <p>You're not a number in a waiting room - you're a person with unique health needs. I take the time to understand your situation, answer questions thoroughly, and create care plans that fit your life. From pediatric care to supporting aging parents, I work with patients of all ages.</p>
-                        </div>
+                        </motion.div>
                         <FingerPrint1 />
-                        <div/>
                     </div>
                 </div>
             </div>

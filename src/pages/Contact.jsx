@@ -1,9 +1,9 @@
 import { Contact1 } from 'icons-by-heynendo'
 import Footer from '../components/Footer'
-import WellLifeLogo1 from '../components/WellLifeLogo1'
+import WellLifeLogo1 from '../components/icons/WellLifeLogo1'
 import '../styles/contact.css'
 import ContactForm from '../components/ContactForm'
-import EmailLogo from '../components/logos/EmailLogo'
+import EmailLogo from '../components/icons/EmailLogo'
 
 export default function Contact(){
     return(
@@ -18,19 +18,15 @@ export default function Contact(){
                         <h2>Contact Options</h2>
                         <div className='break'/>
                         <div className='options'>
-                            <div className='phone'
-                                onClick={() => window.location.href = 'tel:7089298515'}
-                            >
+                            <div className='phone'>
                                 <h3>Phone</h3>
                                 <Contact1 rotation='45' size="40px"/>
-                                <span>708-929-8515</span>
+                                <span onClick={() => window.location.href = 'tel:7089298515'}>708-929-8515</span>
                             </div>
-                            <div className='email'
-                                onClick={() => window.location.href = 'mailto:info@welllifenursingcare.com'}
-                            >
+                            <div className='email'>
                                 <h3>Email</h3>
                                 <EmailLogo size='35px' color='#4281A4'/>
-                                <span>info@welllifenursingcare.com</span>
+                                <span onClick={() => window.location.href = 'mailto:info@welllifenursingcare.com'}>info@welllifenursingcare.com</span>
                             </div>
                         </div>
                     </div>

@@ -1,6 +1,6 @@
 
 import '../styles/footer.css'
-import WellLifeLogo2 from "./WellLifeLogo2"
+import WellLifeLogo2 from "./icons/WellLifeLogo2"
 
 
 export default function Footer({colorPrimary="#E5F0F6", colorSecondary="#D9966D"}){

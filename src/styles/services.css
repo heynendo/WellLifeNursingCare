@@ -9,7 +9,7 @@
     max-width: 1200px;
     background-color: var(--color3);
     border-radius: 10px;
-    margin: 50px 0;
+    margin: 50px auto;
     display: block;
     justify-self: center;
     padding: 10px 25px;
@@ -94,6 +94,9 @@
     opacity: 0.75;
 }
 .services > .mid > button{
+    margin: auto;
+}
+.services > .mid > button{
     display: flex;
     justify-self: center;
     justify-content: center;
@@ -101,9 +104,6 @@
     padding: 0 10vw;
     cursor: pointer;
 }
-/**
-update so the payment types wrap but the h2 label height adjusts to fit the height of the listed payment types
-*/
 .services > .lower > .payment-options{
     display: flex;
     min-height: 100px;
@@ -155,6 +155,10 @@ update so the payment types wrap but the h2 label height adjusts to fit the heig
     }
 }
 @media (max-width: 600px){
+    .services > .top > h3{
+        font-size: 1.25em;
+        margin: 0 25px;
+    }
     .services > .mid > .selected-service > .header{
         flex-direction: column;
     }

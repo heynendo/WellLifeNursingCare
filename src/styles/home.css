@@ -168,6 +168,7 @@
     width: 90%;
     justify-self: center;
     height: 50px;
+    margin: auto;
 }
 .home > .lower > .reviews > .main-review > .container > p{
     width: 80%;

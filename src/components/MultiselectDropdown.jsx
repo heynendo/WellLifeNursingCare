@@ -79,7 +79,6 @@ export default function MultiselectDropdown({
         <>
             <div
                 className={`multiselect-dropdown ${disabled ? "disabled" : ""} ${isOpen ? "open" : ""}`}
-                onClick={handleToggle}
                 ref={dropdownRef}
             >
                 <span className="selected-options">
@@ -117,6 +116,7 @@ export default function MultiselectDropdown({
                         flexShrink: 0,
                         alignSelf: "center",
                     }}
+                    onClick={handleToggle}
                 />
             </div>
 

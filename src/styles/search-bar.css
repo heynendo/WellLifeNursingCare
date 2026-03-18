@@ -9,9 +9,13 @@
     width: 90%;
     max-width: 1200px;
     height: 50px;
-    margin: 50px;
+    margin: 50px auto;
     margin-bottom: 25px;
     opacity: 0.75;
+    transition: 0.2s;
+}
+.search-bar.focused{
+    opacity: 1;
 }
 .search-bar > svg{
     margin: 0 25px;
