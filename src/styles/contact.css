@@ -65,14 +65,14 @@
 }
 .contact > .mid > .info-cards > .card > .options h3{
     color: var(--color1);
-    width: 75%;
+    width: 65%;
     height: 50px;
     justify-content: center;
 }
 .contact > .mid > .info-cards > .card > .options > div svg{
     color: var(--color1);
-    height: 45px;
     width: max-content;
+    align-self: center;
 }
 .contact > .mid > .info-cards > .card span{
     color: var(--color2);

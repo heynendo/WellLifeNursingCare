@@ -3,6 +3,7 @@ import '../styles/contact-form.css'
 import Dropdown from "./Dropdown"
 import { Arrow1 } from "icons-by-heynendo"
 import '../styles/custom-dropdown.css'
+import MultiselectDropdown from "./MultiselectDropdown"
 
 const SERVICES = [
   "Primary Care",
@@ -24,7 +25,7 @@ export default function ContactForm() {
     phoneNumber: "",
     emailAddress: "",
     preferredContact: "",
-    servicesOfInterest: "",
+    servicesOfInterest: [""],
     healthJourneyPriority: "",
     message: "",
   })
@@ -67,7 +68,6 @@ export default function ContactForm() {
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handlePhoneChange}
-                placeholder="XXX-XXX-XXXX"
                 pattern="\d{3}-\d{3}-\d{4}"
                 required
             />
@@ -96,21 +96,24 @@ export default function ContactForm() {
                 ))}
             </select>*/}
             <label>Preferred Contact</label>
-            <Dropdown />
+            <Dropdown
+                options={PREFERRED_CONTACT_OPTIONS}
+                value={formData.preferredContact}
+                onChange={(selected) =>
+                    setFormData((prev) => ({ ...prev, preferredContact: selected }))
+                }
+                placeholder="Select one"
+            />
         </div>
         <div className="container-2">
-            <label>Service(s) of Interest</label>
-            <select
-                name="servicesOfInterest"
+            <label>Service(s) of Interest </label>
+            <MultiselectDropdown
+                options={SERVICES}
                 value={formData.servicesOfInterest}
-                onChange={handleChange}
-                required
-            >
-                <option value="" disabled></option>
-                {SERVICES.map((service) => (
-                <option key={service} value={service}>{service}</option>
-                ))}
-            </select>
+                onChange={(selected) =>
+                    setFormData((prev) => ({ ...prev, servicesOfInterest: selected }))
+                }
+            />
         </div>
         <div className="container-2">
             <label>What's most important to you on your health journey?</label>

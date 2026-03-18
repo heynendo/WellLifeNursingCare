@@ -1,0 +1,81 @@
+.multiselect-dropdown{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 35px;
+    background: var(--color3);
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    padding: 0 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    outline: none;
+    transition: 0.1s box-shadow;
+}
+.multiselect-dropdown > .selected-options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.multiselect-dropdown > .selected-options > .option{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--color1);
+    height: 25px;
+    color: var(--color3);
+    border-radius: 15px;
+    padding: 0 10px;
+}
+.mulitselect-dropdown-options{
+    display: block;
+    max-height: 200px;
+    border-radius: 0 0 5px 5px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    border: solid 2px var(--color2);
+    border-top: none;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    box-shadow: 0px 7.5px 7.5px rgba(0, 0, 0, 0.25);
+}
+.mulitselect-dropdown-options > li{
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: var(--color3);
+    padding-left: 15px;
+    border-top: solid 1px var(--color1);
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 0.2s;
+    gap: 15px;
+}
+.mulitselect-dropdown-options > li > .selected,
+.mulitselect-dropdown-options > li > .not-selected{
+    height: 10px;
+    aspect-ratio: 1;
+    border: solid 2px var(--color1);
+    border-radius: 100%;
+    transition: 0.2s;
+}
+.mulitselect-dropdown-options > li > .selected{
+    background-color: var(--color1);
+}
+.mulitselect-dropdown-options > li:hover{
+    background-color: var(--color1);
+    color: var(--color3);
+}
+.mulitselect-dropdown-options > li:hover > .not-selected{
+    border: solid 2px var(--color3);
+}
+.mulitselect-dropdown-options > li:hover > .selected{
+    background-color: var(--color3);
+    border: solid 2px var(--color3);
+}
