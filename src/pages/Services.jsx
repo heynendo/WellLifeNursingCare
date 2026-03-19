@@ -39,7 +39,14 @@ export default function Services(){
 
 
     const serviceCards = serviceList
-        .filter(service => service.title.toLowerCase().includes(searchTerm.toLowerCase()))
+        .filter(service => {
+            const term = searchTerm.toLowerCase()
+            return (
+                service.title.toLowerCase().includes(term) ||
+                service.shortDesc.toLowerCase().includes(term) ||
+                service.keywords.some(k => k.toLowerCase().includes(term))
+            )
+        })
         .filter((_, index) => showMore || index < 6)
         .map((service, index, arr) => (
         <Fragment key={`${service.id}-${index}`}>

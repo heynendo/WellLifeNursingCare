@@ -1,65 +1,74 @@
 [
   {
-    "id": "wound-care",
-    "title": "Wound Care",
-    "shortDesc": "Professional wound assessment and treatment to promote healing and prevent infection.",
-    "longDesc": "Our wound care service provides expert assessment, cleaning, dressing, and monitoring of acute and chronic wounds. This service can be performed in the comfort of your home, eliminating the need for frequent clinic visits. We help patients and caregivers understand proper wound care techniques and signs of infection to watch for, empowering you to take an active role in recovery.",
-    "cost": 120
+    "id": "quick-care-fix",
+    "title": "Quick Care Fix",
+    "shortDesc": "Fast, focused help for one appointment, form, provider message, or record request.",
+    "longDesc": "Sometimes you just need one thing handled — and handled right. The Quick Care Fix covers a single appointment booking, one form completed, one provider message chain managed, or one medical record request. It's ideal when you hit a wall and need a professional to step in, navigate the system, and get it done without the runaround. Note: This package does not include insurance calls, coordination across multiple providers, or any follow-up loops beyond the initial task.",
+    "cost": 95,
+    "keywords": ["appointment", "scheduling", "form", "paperwork", "records", "medical records", "message", "provider", "referral", "one-time", "single task", "quick"]
   },
   {
-    "id": "medication-management",
-    "title": "Medication Management",
-    "shortDesc": "Personalized medication review and education to keep your health on track.",
-    "longDesc": "Managing multiple medications can be overwhelming. Our medication management service includes a thorough review of your current prescriptions, over-the-counter drugs, and supplements. We identify potential interactions, clarify dosing schedules, and provide easy-to-follow instructions. This service is available virtually or in-home, making it convenient no matter your situation.",
-    "cost": 95
+    "id": "medication-safety-review",
+    "title": "Medication Safety Review",
+    "shortDesc": "A thorough review of your full medication list with an interaction check and written summary.",
+    "longDesc": "Taking multiple medications — whether prescribed, over-the-counter, or supplemental — carries real risks that often go unnoticed. This service includes a complete review of your medication list, a detailed interaction and safety check, and a clear written summary you can keep and share. One provider contact is included to clarify or flag concerns. This is a one-time review and does not cover ongoing monitoring or coordination with multiple prescribers.",
+    "cost": 275,
+    "keywords": ["medication", "meds", "prescriptions", "drugs", "supplements", "interactions", "safety", "pharmacy", "dosage", "pill", "review", "OTC", "over the counter"]
   },
   {
-    "id": "health-assessment",
-    "title": "Health Assessment",
-    "shortDesc": "Comprehensive one-on-one health evaluation to understand your current wellness needs.",
-    "longDesc": "Our health assessment service offers a detailed review of your vital signs, medical history, current symptoms, and lifestyle factors. Conducted by a licensed nurse, this evaluation helps identify areas of concern and creates a foundation for a personalized care plan. Assessments can be done virtually via video call or in person at your home for your comfort and convenience.",
-    "cost": 150
+    "id": "home-care-setup",
+    "title": "Home Care Setup",
+    "shortDesc": "End-to-end coordination to get the right home care agency in place and your first visit confirmed.",
+    "longDesc": "Figuring out home care on your own can be confusing and time-consuming. This service handles the process from start to first visit: determining the right level of service for your needs, sending a referral to one agency, managing the intake process, and confirming your first appointment. It's designed to get things moving without you having to navigate agency red tape alone. Ongoing management after care begins or switching agencies are not included.",
+    "cost": 225,
+    "keywords": ["home care", "home health", "aide", "caregiver", "agency", "in-home", "setup", "intake", "referral", "skilled nursing", "therapy", "discharge", "transition"]
   },
   {
-    "id": "wound-care",
-    "title": "Wound Care",
-    "shortDesc": "Professional wound assessment and treatment to promote healing and prevent infection.",
-    "longDesc": "Our wound care service provides expert assessment, cleaning, dressing, and monitoring of acute and chronic wounds. This service can be performed in the comfort of your home, eliminating the need for frequent clinic visits. We help patients and caregivers understand proper wound care techniques and signs of infection to watch for, empowering you to take an active role in recovery.",
-    "cost": 120
+    "id": "equipment-coordination",
+    "title": "Equipment Coordination",
+    "shortDesc": "Coordination of one piece of durable medical equipment — from order to delivery.",
+    "longDesc": "Getting the right medical equipment delivered shouldn't require a second job. This service covers ordering one item through one supplier and coordinating delivery so it actually shows up. Whether it's a walker, hospital bed, CPAP supplies, or other durable medical equipment, we handle the logistics. Please note this package covers one item through one supplier and does not include insurance denials, repairs, or requests for multiple pieces of equipment.",
+    "cost": 195,
+    "keywords": ["equipment", "DME", "durable medical equipment", "walker", "wheelchair", "hospital bed", "CPAP", "oxygen", "delivery", "supplier", "order", "mobility", "device"]
   },
   {
-    "id": "medication-management",
-    "title": "Medication Management",
-    "shortDesc": "Personalized medication review and education to keep your health on track.",
-    "longDesc": "Managing multiple medications can be overwhelming. Our medication management service includes a thorough review of your current prescriptions, over-the-counter drugs, and supplements. We identify potential interactions, clarify dosing schedules, and provide easy-to-follow instructions. This service is available virtually or in-home, making it convenient no matter your situation.",
-    "cost": 95
+    "id": "insurance-approval",
+    "title": "Insurance Approval Project",
+    "shortDesc": "Full management of one prior authorization — forms, documentation, and follow-up to decision.",
+    "longDesc": "Prior authorizations are one of the most frustrating parts of the healthcare system. This service takes one authorization off your plate completely: we handle the paperwork, pull together supporting documentation, submit everything to your insurer, and follow up until a decision is reached. This covers one medication or procedure through one insurer. Appeals and requests covering multiple items are not included in this package.",
+    "cost": 325,
+    "keywords": ["insurance", "prior auth", "prior authorization", "PA", "approval", "coverage", "denial", "insurer", "payer", "authorization", "benefits", "claim", "procedure", "formulary"]
   },
   {
-    "id": "health-assessment",
-    "title": "Health Assessment",
-    "shortDesc": "Comprehensive one-on-one health evaluation to understand your current wellness needs.",
-    "longDesc": "Our health assessment service offers a detailed review of your vital signs, medical history, current symptoms, and lifestyle factors. Conducted by a licensed nurse, this evaluation helps identify areas of concern and creates a foundation for a personalized care plan. Assessments can be done virtually via video call or in person at your home for your comfort and convenience.",
-    "cost": 150
+    "id": "time-block-1hr",
+    "title": "1-Hour Time Block",
+    "shortDesc": "One hour of dedicated advocacy time for complex or unpredictable situations.",
+    "longDesc": "When a situation doesn't fit neatly into a package — or starts to expand beyond its original scope — a Time Block gives you dedicated, professional time to work through it. Every minute counts: calls, portal navigation, research, and documentation all apply. Work stops when the block is used, and you'll be notified before any additional time is needed. A new block requires your approval before continuing. Best used when things get messy or when you need flexible, focused support without a predefined scope.",
+    "cost": 90,
+    "keywords": ["time block", "hourly", "flexible", "advocacy", "complex", "calls", "portal", "research", "documentation", "custom", "overflow", "ad hoc", "1 hour", "one hour"]
   },
   {
-    "id": "wound-care",
-    "title": "Wound Care",
-    "shortDesc": "Professional wound assessment and treatment to promote healing and prevent infection.",
-    "longDesc": "Our wound care service provides expert assessment, cleaning, dressing, and monitoring of acute and chronic wounds. This service can be performed in the comfort of your home, eliminating the need for frequent clinic visits. We help patients and caregivers understand proper wound care techniques and signs of infection to watch for, empowering you to take an active role in recovery.",
-    "cost": 120
+    "id": "time-block-3hr",
+    "title": "3-Hour Time Block",
+    "shortDesc": "Three hours of dedicated advocacy time for involved, multi-step situations.",
+    "longDesc": "The 3-Hour Time Block is the right choice when you're dealing with a situation that's clearly going to take sustained effort — think a complicated discharge, a multi-step insurance issue, or a situation with several moving parts. All time spent on calls, portals, research, and documentation counts toward your block. You'll always be informed before the block runs out, and any continuation requires your explicit approval. No surprises, no runaway hours.",
+    "cost": 240,
+    "keywords": ["time block", "hourly", "flexible", "advocacy", "complex", "discharge", "multi-step", "calls", "portal", "research", "documentation", "custom", "3 hour", "three hour", "extended"]
   },
   {
-    "id": "medication-management",
-    "title": "Medication Management",
-    "shortDesc": "Personalized medication review and education to keep your health on track.",
-    "longDesc": "Managing multiple medications can be overwhelming. Our medication management service includes a thorough review of your current prescriptions, over-the-counter drugs, and supplements. We identify potential interactions, clarify dosing schedules, and provide easy-to-follow instructions. This service is available virtually or in-home, making it convenient no matter your situation.",
-    "cost": 95
+    "id": "monthly-essential",
+    "title": "Monthly Essential Plan",
+    "shortDesc": "Ongoing monthly coordination for individuals who need consistent, reliable healthcare support.",
+    "longDesc": "The Monthly Essential Plan is built for people who need a steady hand navigating the healthcare system month to month. Included is ongoing coordination, proactive provider communication, medication updates as things change, and regular summaries for family members or caregivers who want to stay informed. This is not a 24/7 service and does not cover emergencies — it's thoughtful, professional support during business hours. Hours do not roll over between months.",
+    "cost": 350,
+    "keywords": ["monthly", "ongoing", "plan", "subscription", "coordination", "regular", "family", "caregiver", "summary", "essential", "routine", "recurring", "support", "management"]
   },
   {
-    "id": "health-assessment",
-    "title": "Health Assessment",
-    "shortDesc": "Comprehensive one-on-one health evaluation to understand your current wellness needs.",
-    "longDesc": "Our health assessment service offers a detailed review of your vital signs, medical history, current symptoms, and lifestyle factors. Conducted by a licensed nurse, this evaluation helps identify areas of concern and creates a foundation for a personalized care plan. Assessments can be done virtually via video call or in person at your home for your comfort and convenience.",
-    "cost": 150
+    "id": "monthly-comprehensive",
+    "title": "Monthly Comprehensive Plan",
+    "shortDesc": "Full-service monthly care coordination with expanded hours and priority access.",
+    "longDesc": "For patients managing complex, ongoing health needs, the Monthly Comprehensive Plan offers the most complete level of support available. You'll receive all the benefits of the Essential Plan — ongoing coordination, provider communication, medication tracking, and family summaries — with more available hours and priority scheduling. Ideal for those managing multiple conditions, recent hospitalizations, or active care transitions. Hours do not roll over, this is not a 24/7 or emergency service, and all work is scheduled in advance.",
+    "cost": 575,
+    "keywords": ["monthly", "ongoing", "plan", "subscription", "comprehensive", "full service", "priority", "complex", "multiple conditions", "hospitalization", "transition", "recurring", "support", "management", "premium"]
   }
 ]
