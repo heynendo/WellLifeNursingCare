@@ -21,6 +21,7 @@
     transition: 0.2s ease-in;
 }
 .navigation > .right > a > h4{
+    border-bottom: 5px solid transparent;
     transition: 0.2s ease-in;
 }
 .navigation > .right > a > .selected{

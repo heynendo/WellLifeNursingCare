@@ -25,7 +25,7 @@ export default function ContactForm() {
     phoneNumber: "",
     emailAddress: "",
     preferredContact: "",
-    servicesOfInterest: [""],
+    servicesOfInterest: [],
     healthJourneyPriority: "",
     message: "",
   })
@@ -83,18 +83,6 @@ export default function ContactForm() {
             />
         </div>
         <div className="container-1">
-            {/*<label>Preferred Contact</label>
-            <select
-                name="preferredContact"
-                value={formData.preferredContact}
-                onChange={handleChange}
-                required
-            >
-                <option value="" disabled></option>
-                {PREFERRED_CONTACT_OPTIONS.map((opt) => (
-                <option key={opt} value={opt}>{opt}</option>
-                ))}
-            </select>*/}
             <label>Preferred Contact</label>
             <Dropdown
                 options={PREFERRED_CONTACT_OPTIONS}

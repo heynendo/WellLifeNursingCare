@@ -16,7 +16,7 @@ export default function About(){
                             <div className='break' />
                             <h4 className='credentials'> RN MSN CMM AMC-BC</h4>
                         </div>
-                        <p>I'm Lynnette, a [board-certified/licensed] Registered Nurse with [X] years of experience in [specialties - ICU, pediatrics, home health, etc.]. Throughout my career, I've seen how overwhelming and confusing healthcare can be - even for people who know the system. That's why I started Well Life Nursing Care.</p>
+                        <p>I'm Lynnette, a board-certified and licensed Registered Nurse with 20 years of experience in both inpatient and outpatient nursing care, with a strong focus on community health. Throughout my career, I've seen how overwhelming and confusing healthcare can be - even for people who know the system. That's why I started Well Life Nursing Care.</p>
                         <p>I believe everyone deserves a healthcare advocate; someone who takes the time to listen, explain your options clearly, and help you navigate the complexities of the medical world. I can help with hands-on care at home, guidance finding the right specialist, or just someone to answer your health questions without judgment.</p>
                         <p>My approach is simple: treat every client like family. That means personalized attention, honest communication, and care that fits your life and your needs.</p>
                     </div>

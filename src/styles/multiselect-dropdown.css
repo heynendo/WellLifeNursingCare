@@ -9,16 +9,30 @@
     box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     border: none;
-    padding: 0 15px;
+    padding: 5px 15px;
     font-family: 'Inter';
     font-style: normal;
     outline: none;
     transition: 0.1s box-shadow;
 }
+.multiselect-dropdown.open{
+    border-radius: 5px 5px 0 0;
+    border: solid 2px var(--color2);
+    border-bottom: none;
+}
 .multiselect-dropdown > .selected-options{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
+.multiselect-dropdown > .dropdown-toggle{
+    display: flex;
+    width: 25px;
+    flex-shrink: 0;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
 }
 .multiselect-dropdown > .selected-options > .option{
     display: flex;
@@ -68,14 +82,16 @@
 .mulitselect-dropdown-options > li > .selected{
     background-color: var(--color1);
 }
-.mulitselect-dropdown-options > li:hover{
-    background-color: var(--color1);
-    color: var(--color3);
-}
-.mulitselect-dropdown-options > li:hover > .not-selected{
-    border: solid 2px var(--color3);
-}
-.mulitselect-dropdown-options > li:hover > .selected{
-    background-color: var(--color3);
-    border: solid 2px var(--color3);
+@media (min-width: 700px){
+    .mulitselect-dropdown-options > li:hover{
+        background-color: var(--color1);
+        color: var(--color3);
+    }
+    .mulitselect-dropdown-options > li:hover > .not-selected{
+        border: solid 2px var(--color3);
+    }
+    .mulitselect-dropdown-options > li:hover > .selected{
+        background-color: var(--color3);
+        border: solid 2px var(--color3);
+    }
 }

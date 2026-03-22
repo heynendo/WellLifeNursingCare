@@ -161,6 +161,7 @@ export default function Navigation(){
                 >
                     {currentPage !== 'Home' &&
                     <Link to='/'
+                    onClick={() => setNavOptions(false)}
                     style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}}
                     >
                         <HouseIcon 
@@ -173,6 +174,7 @@ export default function Navigation(){
                     }
                     {currentPage !== 'About' &&
                     <Link to='/about'
+                    onClick={() => setNavOptions(false)}
                     style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}} 
                     >
                         <ProfileIcon 
@@ -185,6 +187,7 @@ export default function Navigation(){
                     }
                     {currentPage !== 'Services' &&
                     <Link to='/services'
+                    onClick={() => setNavOptions(false)}
                     style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}}
                     >
                         <MedicalBadge1
@@ -195,6 +198,7 @@ export default function Navigation(){
                     }
                     {currentPage !== 'Contact' &&
                     <Link to='/contact'
+                    onClick={() => setNavOptions(false)}
                     style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}}
                     >
                         <Contact1 

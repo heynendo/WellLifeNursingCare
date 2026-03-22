@@ -44,13 +44,42 @@
 .home > .hero > .right{
     align-content: center;
 }
-.headshot{
+/*.headshot{
     border: solid 5px var(--color2);
     border-radius: 100%;
     width: 100%;
     max-width: 500px;
     aspect-ratio: 1;
     box-shadow: var(--shadow1);
+}*/
+.headshot-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    box-shadow: var(--shadow1);
+}
+
+.headshot {
+    border: solid 5px var(--color2);
+    border-radius: 100%;
+    width: 100%;
+    aspect-ratio: 1;
+    display: block;
+}
+
+.headshot-loader {
+    position: absolute;
+    inset: 0;
+    border-radius: 100%;
+    background: linear-gradient(90deg, var(--color2-dark) 25%, var(--color2) 50%, var(--color2-dark) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+}
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
 }
 .home > .mid{
     background-color: var(--color4);
@@ -149,7 +178,7 @@
 }
 .home > .lower > .reviews > .main-review{
     background: var(--color2-gradient);
-    height: 200px;
+    min-height: 200px;
     width: 60%;
     max-width: 750px;
     border-radius: 25px;
@@ -165,7 +194,7 @@
 .home > .lower > .reviews > .main-review > .container > .head{
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 85%;
     justify-self: center;
     height: 50px;
     margin: auto;
@@ -173,13 +202,15 @@
 .home > .lower > .reviews > .main-review > .container > p{
     width: 80%;
     justify-self: center;
-    margin: 15px auto;
+    margin: 5px auto;
+    margin-bottom: 25px;
 }
 .home > .lower > .reviews > .main-review > svg{
     grid-row: 1;
     grid-column: 1;
     width: 70%;
-    max-height: 80%;
+    aspect-ratio: 1;
+    max-height: 175px;
     display: flex;
     align-self: center;
     justify-self: flex-end;
@@ -202,6 +233,27 @@
     .home > .mid > .about-cards > .card{
         width: 100%;
         min-height: 325px;
+    }
+    .home > .lower > .reviews{
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 25px;
+    }
+    .home > .lower > .reviews > h2{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        min-height: 0px;
+    }
+    .home > .lower > .reviews > .break{
+        height: 5px;
+        width: 100%;
+    }
+    .home > .lower > .reviews > .main-review{
+        min-height: 100px;
+        margin-top: 25px;
+        height: none;
+        width: 100%;
     }
 }
 @media (max-width: 700px){
@@ -238,7 +290,7 @@
         justify-self: center;
         margin: 15px auto;
     }
-    .headshot{
+    /*.headshot{
         border: solid 5px var(--color2);
         border-radius: 100%;
         width: 100%;
@@ -249,6 +301,11 @@
         width: 75vw;
         display: flex;
         justify-content: center;
+    }*/
+    .headshot-container {
+        max-width: 400px;
+        width: 75vw;
+        margin: 0 50px;
     }
     .home > .hero > .left > .cta-buttons{
         display: flex;
@@ -261,26 +318,5 @@
     .home > .hero > .left > .cta-buttons > .button-lg{
         width: 75%;
         align-self: center;
-    }
-    .home > .lower > .reviews{
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 25px;
-    }
-    .home > .lower > .reviews > h2{
-        width: 100%;
-        text-align: center;
-        justify-content: center;
-        min-height: 0px;
-    }
-    .home > .lower > .reviews > .break{
-        height: 5px;
-        width: 100%;
-    }
-    .home > .lower > .reviews > .main-review{
-        min-height: 100px;
-        margin-top: 25px;
-        height: none;
-        width: 100%;
     }
 }

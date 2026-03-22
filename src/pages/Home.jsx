@@ -1,16 +1,19 @@
-import { Contact1, Contact2, HeartMedical1, MedicalBadge1, Stethoscope1 } from "icons-by-heynendo"
+import { Contact1, HeartMedical1, MedicalBadge1, Stethoscope1 } from "icons-by-heynendo"
 import WellLifeLogo1 from "../components/icons/WellLifeLogo1"
 import '../styles/home.css'
 import Footer from "../components/Footer"
 import { getWindowWidth } from "../functions/GetWindowWidth"
 import { useNavigate } from "react-router-dom"
-import { motion } from "framer-motion"
+import { AnimatePresence, motion } from "framer-motion"
+import { useState } from "react"
 
 export default function Home(){
 
     const navigate = useNavigate()
 
     const width = getWindowWidth()
+
+    const [headshotLoaded, setHeadshotLoaded] = useState(false)
 
     return(
         <div className="home page-layout">
@@ -21,7 +24,24 @@ export default function Home(){
                         Your Trusted Guide Through Every Health Decision
                     </span>
                     {width < 700 &&
-                        <img className="headshot" src="/headshot.png"/>
+                        <div className="headshot-container">
+                            <img
+                                className="headshot"
+                                src="/headshot.png"
+                                onLoad={() => setHeadshotLoaded(true)}
+                            />
+                            <AnimatePresence>
+                                {!headshotLoaded && (
+                                    <motion.div
+                                        className="headshot-loader"
+                                        key="loader"
+                                        initial={{ opacity: 1 }}
+                                        exit={{ opacity: 0 }}
+                                        transition={{ duration: 0.5 }}
+                                    />
+                                )}
+                            </AnimatePresence>
+                        </div>
                     }
                     <div className="cta-buttons">
                         <button className="button-lg contact-btn"
@@ -42,7 +62,24 @@ export default function Home(){
                 </div>
                 {width > 700 &&
                 <div className="right">
-                    <img className="headshot" src="/headshot.png"/>
+                    <div className="headshot-container">
+                        <img
+                            className="headshot"
+                            src="/headshot.png"
+                            onLoad={() => setHeadshotLoaded(true)}
+                        />
+                        <AnimatePresence>
+                            {!headshotLoaded && (
+                                <motion.div
+                                    className="headshot-loader"
+                                    key="loader"
+                                    initial={{ opacity: 1 }}
+                                    exit={{ opacity: 0 }}
+                                    transition={{ duration: 0.5 }}
+                                />
+                            )}
+                        </AnimatePresence>
+                    </div>
                 </div>
                 }
             </div>
@@ -103,10 +140,10 @@ export default function Home(){
                     <div className="main-review">
                         <div className="container">
                             <div className="head">
-                                <h3>John Doe</h3>
-                                <h4>4 stars</h4>
+                                <h3>Kelly Riney</h3>
+                                <h4></h4>
                             </div>
-                            <p>This is the full review from a customer. This one is highlighted above the others</p>
+                            <p>Lynnette is the very best, she has helped me for years with my aging mother. She has helped with navigating doctors and nurses, nursing facilities after surgeries and understanding some of the medications. Lynnette has helped lighten the stress level in some of my most difficult times. Don't be afraid to ask for help she is truly wonderful!!</p>
                         </div>
                         <WellLifeLogo1 
                         color="#E5F0F6"/>

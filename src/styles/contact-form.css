@@ -27,6 +27,7 @@
     color: var(--color3);
     min-height: 35px;
     margin-left: 15px;
+    padding: 5px 0;
     align-content: center;
 }
 .contact-form input,

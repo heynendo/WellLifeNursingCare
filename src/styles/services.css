@@ -104,6 +104,82 @@
     padding: 0 10vw;
     cursor: pointer;
 }
+.services > .mid > .break{
+    border-bottom: solid 2px var(--color1);
+    margin: 0 25px;
+}
+.services > .mid > .pricing-tagline{
+    color: var(--color3);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto 25px;
+    font-size: 3em;
+}
+.services > .mid > .pricing{
+    display: flex;
+    justify-self: center;
+    max-width: 1200px;
+    width: 95%;
+    justify-content: center;
+    gap: 5%;
+    margin: 0 25px;
+    margin-bottom: 75px;
+    text-align: center;
+    overflow: visible;
+}
+.services > .mid > .pricing > .pricing-card{
+    background: var(--color1-gradient);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    min-height: 300px;
+    width: 30%;
+    padding: 0 15px;
+    overflow: visible;
+}
+.services > .mid > .pricing > .pricing-card > h3{
+    display: flex;
+    justify-content: center;
+    min-height: 75px;
+}
+.services > .mid > .pricing > .pricing-card > p{
+    color: var(--color3);
+    text-align: left;
+}
+.services > .mid > .pricing > .pricing-card > h1{
+    color: var(--color3);
+    min-height: 100px;
+    font-weight: 900;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: -0.05em;
+    line-height: 50px;
+    padding: 0 2px;
+    overflow: visible;
+}
+@media (max-width: 850px){
+    .services > .mid > .pricing{
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        width: 90vw;
+        gap: 25px;
+        margin: auto;
+        margin-bottom: 75px;
+    }
+    .services > .mid > .pricing > .pricing-card{
+        min-height: 300px;
+        width: 100%;
+        margin: auto;
+        justify-self: center;
+    }
+    .services > .mid > .pricing-tagline{
+        font-size: 2.25em;
+    }
+}
 .services > .lower > .payment-options{
     display: flex;
     min-height: 100px;

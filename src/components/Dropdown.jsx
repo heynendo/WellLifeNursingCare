@@ -1,27 +1,3 @@
-/**import { useState, useEffect, useRef, Fragment } from "react"
-import '../styles/custom-dropdown.css'
-import { motion, AnimatePresence } from "framer-motion"
-import { Arrow1 } from "icons-by-heynendo"
-
-export default function Dropdown(){
-    return(
-        <>
-        <div className="custom-dropdown">
-            <span className="selected-option"></span>
-            <Arrow1 
-                color="#4281A4"
-                size={15}
-                style={{cursor: 'pointer', transition: '0.2s ease-in'}}
-            />
-        </div>
-        <ul className="dropdown-options">
-            <li>Email</li>
-            <li>Text</li>
-            <li>Call</li>
-        </ul>
-        </>
-    )
-}*/
 import { useState, useEffect, useRef } from "react"
 import '../styles/custom-dropdown.css'
 import { motion, AnimatePresence } from "framer-motion"
@@ -36,7 +12,6 @@ export default function Dropdown({
     const [isOpen, setIsOpen] = useState(false)
     const dropdownRef = useRef(null)
 
-    // Close when clicking outside
     useEffect(() => {
         const handleClickOutside = (e) => {
             if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {

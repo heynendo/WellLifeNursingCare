@@ -137,6 +137,44 @@ export default function Services(){
                 <button onClick={() => setShowMore(prev => !prev)} >
                     <h3>{showMore ? 'Show Less' : 'Show More'}</h3>
                 </button>
+                <div className='break'/>
+                <h1 className='pricing-tagline'>Flexible Pricing Options</h1>
+                <div className='pricing'>
+                {[
+                    {
+                        title: "Initial Virtual Consultation Rate",
+                        text: "Your first virtual visit typically lasts 30 to 60 minutes and includes a comprehensive health assessment, review of your medical history, and a personalized care plan tailored to your needs.",
+                        price: "$150-200"
+                    },
+                    {
+                        title: "Quick Care Rate",
+                        text: "pricing info",
+                        price: "$100-200+"
+                    },
+                    {
+                        title: "Insurance Approval Project",
+                        text: "pricing info",
+                        price: "$200-300+"
+                    }
+                ].map((card, index) => (
+                    <motion.div
+                        className='pricing-card'
+                        key={index}
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{
+                            duration: 0.7,
+                            delay: index * 0.15,
+                            ease: "easeOut"
+                        }}
+                        viewport={{ once: true }}
+                    >
+                        <h3>{card.title}</h3>
+                        <p>{card.text}</p>
+                        <h1>{card.price}</h1>
+                    </motion.div>
+                ))}
+            </div>
             </div>
             <div className='lower'>
                 <div className='payment-options'>
