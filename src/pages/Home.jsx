@@ -16,7 +16,7 @@ export default function Home(){
     const [headshotLoaded, setHeadshotLoaded] = useState(false)
 
     return(
-        <div className="home page-layout">
+        <main className="home page-layout">
             <div className="hero">
                 <div className="left">
                     {width > 700 ? <WellLifeLogo1 size="450px"/> : <h1>Well Life Nursing Care</h1>}
@@ -91,13 +91,13 @@ export default function Home(){
                 <div className="about-cards">
                     {[
                         {
-                            title: "In-Home or Virtual Care",
-                            text: "Healthcare on your terms. I offer in-person visits throughout [Chicagoland area? Or more specific?] and virtual consultations for clients nationwide. Whether you prefer face-to-face care or the ease of an online appointment, I'm ready to help when and where you need it.",
+                            title: "Care Delivered to You",
+                            text: "Your health, your schedule. We primarily offer virtual care, with in-person visits available in select areas. Whether online or face-to-face, you'll get the same attentive, personalized care — when and where it works for you.",
                             icon: <MedicalBadge1 />
                         },
                         {
                             title: "Concierge & Medical Services",
-                            text: "I provide the full spectrum of nursing support - clinical services like lab draws and post-op care, plus the guidance you need to find good doctors and navigate the healthcare system. Consider me your all-in-one healthcare resource.",
+                            text: "Hands-on clinical support meets expert guidance. I manage the details — lab work, post-op follow-ups, finding the right doctors — so you can focus on getting better, not figuring out the system.",
                             icon: <HeartMedical1 />
                         },
                         {
@@ -151,6 +151,6 @@ export default function Home(){
                 </div>
                 <Footer />
             </div>
-        </div>
+        </main>
     )
 }

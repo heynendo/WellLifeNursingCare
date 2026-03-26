@@ -60,7 +60,7 @@ export default function Navigation(){
 
     return(
         <>
-        <header className="navigation"
+        <nav className="navigation"
             style={{ background: colorSwitch ? colorSet.color2 : colorSet.color1}} 
         >
             <div className="left">
@@ -136,7 +136,7 @@ export default function Navigation(){
                 </div>
                 }
             </div>
-        </header>
+        </nav>
             <AnimatePresence>
             {navOptions && width < 700 && (
                 <motion.div

@@ -4,18 +4,9 @@ import Dropdown from "./Dropdown"
 import { Arrow1 } from "icons-by-heynendo"
 import '../styles/custom-dropdown.css'
 import MultiselectDropdown from "./MultiselectDropdown"
+import ServicesList from '../data/service-list.json'
 
-const SERVICES = [
-  "Primary Care",
-  "Mental Health",
-  "Nutrition Counseling",
-  "Physical Therapy",
-  "Chronic Disease Management",
-  "Preventive Care",
-  "Women's Health",
-  "Pediatrics",
-  "Other"
-]
+const SERVICES = ServicesList.map((service) => service.title)
 
 const PREFERRED_CONTACT_OPTIONS = ["Email", "Text", "Call"]
 
@@ -54,8 +45,9 @@ export default function ContactForm() {
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
         <div className="container-1">
-            <label>Full Name</label>
+            <label htmlFor="fullName">Full Name</label>
             <input
+                id="fullName"
                 name="fullName"
                 value={formData.fullName}
                 onChange={handleChange}
@@ -63,8 +55,9 @@ export default function ContactForm() {
             />
         </div>
         <div className="container-1">
-            <label>Phone Number</label>
+            <label htmlFor="phoneNumber">Phone Number</label>
             <input
+                id="phoneNumber"
                 name="phoneNumber"
                 value={formData.phoneNumber}
                 onChange={handlePhoneChange}
@@ -73,8 +66,9 @@ export default function ContactForm() {
             />
         </div>
         <div className="container-1">
-            <label>Email Address</label>
+            <label htmlFor="emailAddress">Email Address</label>
             <input
+                id="emailAddress"
                 type="email"
                 name="emailAddress"
                 value={formData.emailAddress}
@@ -83,7 +77,7 @@ export default function ContactForm() {
             />
         </div>
         <div className="container-1">
-            <label>Preferred Contact</label>
+            <label >Preferred Contact</label>
             <Dropdown
                 options={PREFERRED_CONTACT_OPTIONS}
                 value={formData.preferredContact}
@@ -94,7 +88,7 @@ export default function ContactForm() {
             />
         </div>
         <div className="container-2">
-            <label>Service(s) of Interest </label>
+            <label >Service(s) of Interest </label>
             <MultiselectDropdown
                 options={SERVICES}
                 value={formData.servicesOfInterest}
@@ -104,8 +98,9 @@ export default function ContactForm() {
             />
         </div>
         <div className="container-2">
-            <label>What's most important to you on your health journey?</label>
+            <label htmlFor="healthJourneyPriority">What's most important to you on your health journey?</label>
             <textarea
+                id="healthJourneyPriority"
                 className="health-journey"
                 name="healthJourneyPriority"
                 value={formData.healthJourneyPriority}
@@ -114,8 +109,9 @@ export default function ContactForm() {
             />
         </div>
         <div className="container-2">
-            <label>Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
+                id="message"
                 className="message"
                 name="message"
                 value={formData.message}

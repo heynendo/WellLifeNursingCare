@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 export default function About(){
     return(
-        <div className="about page-layout">
+        <main className="about page-layout">
             <div className='top'>
                 <h1>Professional Nursing Care with a Personal Touch</h1>
                 <div className='bio'>
@@ -31,8 +31,8 @@ export default function About(){
                             transition={{ duration: 0.75, ease: 'easeOut' }}
                             viewport={{ once: true }}
                         >
-                            <h3>In-Person or Virtual Care, Your Choice</h3>
-                            <p>Healthcare on your terms. I offer in-person visits throughout [Chicagoland area? Or more specific?] and virtual consultations for clients nationwide. Whether you prefer face-to-face care or the ease of an online appointment, I'm ready to help when and where you need it.</p>
+                            <h3>Care Delivered to You</h3>
+                            <p>Your health, your schedule. We primarily offer virtual care, with in-person visits available in select areas. Whether online or face-to-face, you'll get the same attentive, personalized care — when and where it works for you.</p>
                             <div/>
                         </motion.div>
                         <MedicalBadge1 />
@@ -45,7 +45,7 @@ export default function About(){
                             viewport={{ once: true }}
                         >
                             <h3>Clinical Care and Healthcare Navigation</h3>
-                            <p>I provide the full spectrum of nursing support - clinical services like lab draws and post-op care, plus the guidance you need to find good doctors and navigate the healthcare system. Consider me your all-in-one healthcare resource.</p>
+                            <p>Hands-on clinical support meets expert guidance. I manage the details — lab work, post-op follow-ups, finding the right doctors — so you can focus on getting better, not figuring out the system.</p>
                         </motion.div>
                         <HeartMedical1 />
                     </div>
@@ -57,7 +57,7 @@ export default function About(){
                             viewport={{ once: true }}
                         >
                             <h3>Simple Transparent Pricing</h3>
-                            <p>No insurance headaches, no surprise bills, no hidden fees. All services are straightforward cash-pay rates, so you know exactly what you're paying. With Well Life you will receive quality care without delays and added confusion. Lab tests and diagnostics are billed directly to your insurance when applicable.</p>
+                            <p>No insurance headaches, no surprise bills, no hidden fees. All services are straightforward cash-pay rates so you know what to expect. With Well Life you will receive quality care without delays and added confusion. Lab tests and diagnostics are billed directly to your insurance when applicable.</p>
                         </motion.div>
                         <PiggyBank3 />
                     </div>
@@ -78,6 +78,6 @@ export default function About(){
             <div className='lower'>
                 <Footer />
             </div>
-        </div>
+        </main>
     )
 }

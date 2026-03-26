@@ -124,7 +124,6 @@
     justify-content: center;
     gap: 5%;
     margin: 0 25px;
-    margin-bottom: 75px;
     text-align: center;
     overflow: visible;
 }
@@ -160,25 +159,17 @@
     padding: 0 2px;
     overflow: visible;
 }
-@media (max-width: 850px){
-    .services > .mid > .pricing{
-        display: flex;
-        flex-direction: column;
-        max-width: 1200px;
-        width: 90vw;
-        gap: 25px;
-        margin: auto;
-        margin-bottom: 75px;
-    }
-    .services > .mid > .pricing > .pricing-card{
-        min-height: 300px;
-        width: 100%;
-        margin: auto;
-        justify-self: center;
-    }
-    .services > .mid > .pricing-tagline{
-        font-size: 2.25em;
-    }
+.services > .mid > .disclaimer{
+    font-style: italic;
+    color: var(--color3);
+    text-align: center;
+    opacity: 0.75;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 75px;
+}
+.services > .mid > .disclaimer > span{
+    font-weight: 800;
 }
 .services > .lower > .payment-options{
     display: flex;
@@ -228,6 +219,26 @@
     }
     .services > .lower > .payment-options > .option-cards > .card h3{
         font-size: 1.25em;
+    }
+}
+@media (max-width: 850px){
+    .services > .mid > .pricing{
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        width: 90vw;
+        gap: 25px;
+        margin: auto;
+        margin-bottom: 75px;
+    }
+    .services > .mid > .pricing > .pricing-card{
+        min-height: 300px;
+        width: 100%;
+        margin: auto;
+        justify-self: center;
+    }
+    .services > .mid > .pricing-tagline{
+        font-size: 2.25em;
     }
 }
 @media (max-width: 600px){

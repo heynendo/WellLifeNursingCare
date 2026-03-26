@@ -1,74 +1,86 @@
 [
   {
-    "id": "quick-care-fix",
-    "title": "Quick Care Fix",
-    "shortDesc": "Fast, focused help for one appointment, form, provider message, or record request.",
-    "longDesc": "Sometimes you just need one thing handled — and handled right. The Quick Care Fix covers a single appointment booking, one form completed, one provider message chain managed, or one medical record request. It's ideal when you hit a wall and need a professional to step in, navigate the system, and get it done without the runaround. Note: This package does not include insurance calls, coordination across multiple providers, or any follow-up loops beyond the initial task.",
-    "cost": 95,
-    "keywords": ["appointment", "scheduling", "form", "paperwork", "records", "medical records", "message", "provider", "referral", "one-time", "single task", "quick"]
+    "id": "care-coordination",
+    "title": "Care Coordination",
+    "shortDesc": "Personalized guidance and coordination through every step of your healthcare journey.",
+    "longDesc": "Care coordination brings together the many moving parts of your healthcare — providers, appointments, referrals, and follow-up — into a cohesive, manageable experience. When communication breaks down between specialists, primary care, and other members of a care team, important details can fall through the cracks. Having a dedicated person to keep everything connected and moving helps patients stay informed, reduce confusion, and feel confident that their care is being handled with intention.",
+    "keywords": ["coordination", "navigation", "appointments", "referral", "providers", "communication", "care plan", "advocacy", "system", "healthcare", "scheduling", "follow-up", "transition"]
   },
   {
-    "id": "medication-safety-review",
-    "title": "Medication Safety Review",
-    "shortDesc": "A thorough review of your full medication list with an interaction check and written summary.",
-    "longDesc": "Taking multiple medications — whether prescribed, over-the-counter, or supplemental — carries real risks that often go unnoticed. This service includes a complete review of your medication list, a detailed interaction and safety check, and a clear written summary you can keep and share. One provider contact is included to clarify or flag concerns. This is a one-time review and does not cover ongoing monitoring or coordination with multiple prescribers.",
-    "cost": 275,
-    "keywords": ["medication", "meds", "prescriptions", "drugs", "supplements", "interactions", "safety", "pharmacy", "dosage", "pill", "review", "OTC", "over the counter"]
+    "id": "chronic-disease-management",
+    "title": "Chronic Disease Management",
+    "shortDesc": "Ongoing support to help you manage a chronic condition with confidence and consistency.",
+    "longDesc": "Chronic conditions like diabetes, heart disease, COPD, and hypertension require consistent attention over time — not just during appointments. Effective management involves monitoring symptoms, understanding medications, making lifestyle adjustments, and staying connected with your care team. Without ongoing support, it is easy for small changes to go unnoticed and for conditions to progress in ways that could have been prevented.",
+    "keywords": ["chronic", "diabetes", "heart disease", "COPD", "hypertension", "blood pressure", "asthma", "kidney", "ongoing", "management", "condition", "disease", "long-term", "monitor"]
   },
   {
-    "id": "home-care-setup",
-    "title": "Home Care Setup",
-    "shortDesc": "End-to-end coordination to get the right home care agency in place and your first visit confirmed.",
-    "longDesc": "Figuring out home care on your own can be confusing and time-consuming. This service handles the process from start to first visit: determining the right level of service for your needs, sending a referral to one agency, managing the intake process, and confirming your first appointment. It's designed to get things moving without you having to navigate agency red tape alone. Ongoing management after care begins or switching agencies are not included.",
-    "cost": 225,
-    "keywords": ["home care", "home health", "aide", "caregiver", "agency", "in-home", "setup", "intake", "referral", "skilled nursing", "therapy", "discharge", "transition"]
+    "id": "end-of-life-care",
+    "title": "End of Life Care",
+    "shortDesc": "Compassionate support and coordination for patients and families navigating hospice and end of life care.",
+    "longDesc": "End of life care focuses on comfort, dignity, and honoring a person's wishes during the final stages of life. Hospice is a specialized form of this care, designed for patients who are no longer pursuing curative treatment and want to prioritize quality of life. Navigating this transition involves understanding eligibility, coordinating with care teams, and ensuring that both the patient and their family feel supported, informed, and prepared for what lies ahead.",
+    "keywords": ["hospice", "end of life", "terminal", "comfort care", "dying", "death", "serious illness", "grief", "advance directive", "DNR", "family support", "transition"]
   },
   {
-    "id": "equipment-coordination",
-    "title": "Equipment Coordination",
-    "shortDesc": "Coordination of one piece of durable medical equipment — from order to delivery.",
-    "longDesc": "Getting the right medical equipment delivered shouldn't require a second job. This service covers ordering one item through one supplier and coordinating delivery so it actually shows up. Whether it's a walker, hospital bed, CPAP supplies, or other durable medical equipment, we handle the logistics. Please note this package covers one item through one supplier and does not include insurance denials, repairs, or requests for multiple pieces of equipment.",
-    "cost": 195,
+    "id": "medical-equipment",
+    "title": "Medical Equipment Coordination",
+    "shortDesc": "The right equipment, ordered and delivered — without the runaround.",
+    "longDesc": "Durable medical equipment — such as walkers, wheelchairs, hospital beds, and CPAP supplies — plays an important role in recovery, mobility, and daily functioning. Obtaining the right equipment often involves navigating suppliers, insurance requirements, and delivery logistics that can be time-consuming and confusing. Understanding what is needed and how to get it is an important part of managing care at home or transitioning out of a facility.",
     "keywords": ["equipment", "DME", "durable medical equipment", "walker", "wheelchair", "hospital bed", "CPAP", "oxygen", "delivery", "supplier", "order", "mobility", "device"]
   },
   {
-    "id": "insurance-approval",
-    "title": "Insurance Approval Project",
-    "shortDesc": "Full management of one prior authorization — forms, documentation, and follow-up to decision.",
-    "longDesc": "Prior authorizations are one of the most frustrating parts of the healthcare system. This service takes one authorization off your plate completely: we handle the paperwork, pull together supporting documentation, submit everything to your insurer, and follow up until a decision is reached. This covers one medication or procedure through one insurer. Appeals and requests covering multiple items are not included in this package.",
-    "cost": 325,
-    "keywords": ["insurance", "prior auth", "prior authorization", "PA", "approval", "coverage", "denial", "insurer", "payer", "authorization", "benefits", "claim", "procedure", "formulary"]
+    "id": "medication-management",
+    "title": "Medication Management",
+    "shortDesc": "Ongoing medication support including a thorough safety review, interaction check, and written summary of your full medication list.",
+    "longDesc": "Managing multiple medications — including prescriptions, over-the-counter drugs, and supplements — carries real risks that are easy to overlook. Drug interactions, duplicate therapies, and outdated prescriptions are common issues that often go undetected without a thorough review. A clear, accurate understanding of what you are taking, why you are taking it, and how everything works together is essential to safe and effective care.",
+    "keywords": ["medication", "meds", "prescriptions", "drugs", "supplements", "interactions", "safety", "pharmacy", "dosage", "pill", "review", "OTC", "over the counter", "management"]
   },
   {
-    "id": "time-block-1hr",
-    "title": "1-Hour Time Block",
-    "shortDesc": "One hour of dedicated advocacy time for complex or unpredictable situations.",
-    "longDesc": "When a situation doesn't fit neatly into a package — or starts to expand beyond its original scope — a Time Block gives you dedicated, professional time to work through it. Every minute counts: calls, portal navigation, research, and documentation all apply. Work stops when the block is used, and you'll be notified before any additional time is needed. A new block requires your approval before continuing. Best used when things get messy or when you need flexible, focused support without a predefined scope.",
-    "cost": 90,
-    "keywords": ["time block", "hourly", "flexible", "advocacy", "complex", "calls", "portal", "research", "documentation", "custom", "overflow", "ad hoc", "1 hour", "one hour"]
+    "id": "mens-health",
+    "title": "Men's Health",
+    "shortDesc": "Comprehensive, individualized support for men's health concerns including hormonal health, reproductive health, and weight and metabolic health.",
+    "longDesc": "Men's health encompasses a range of concerns that are often underaddressed, including hormonal changes, reproductive health, and weight and metabolic health. Shifts in testosterone levels, changes in energy, unexplained weight gain, and other symptoms can significantly affect quality of life but are frequently dismissed or attributed to aging. Understanding these changes and having access to informed, personalized guidance can make a meaningful difference in how men feel and how proactively they engage with their health.",
+    "keywords": ["men's health", "testosterone", "hormones", "hormonal", "reproductive", "metabolic", "weight", "low T", "andropause", "prostate", "energy", "men"]
   },
   {
-    "id": "time-block-3hr",
-    "title": "3-Hour Time Block",
-    "shortDesc": "Three hours of dedicated advocacy time for involved, multi-step situations.",
-    "longDesc": "The 3-Hour Time Block is the right choice when you're dealing with a situation that's clearly going to take sustained effort — think a complicated discharge, a multi-step insurance issue, or a situation with several moving parts. All time spent on calls, portals, research, and documentation counts toward your block. You'll always be informed before the block runs out, and any continuation requires your explicit approval. No surprises, no runaway hours.",
-    "cost": 240,
-    "keywords": ["time block", "hourly", "flexible", "advocacy", "complex", "discharge", "multi-step", "calls", "portal", "research", "documentation", "custom", "3 hour", "three hour", "extended"]
+    "id": "palliative-services",
+    "title": "Palliative Services",
+    "shortDesc": "Compassionate support and coordination for patients living with serious illness who need relief from pain, stress, and difficult symptoms.",
+    "longDesc": "Palliative care is specialized support focused on relieving the pain, stress, and symptoms associated with serious illness — regardless of diagnosis or stage of treatment. It is not the same as hospice and can be received alongside curative treatment at any point in an illness. The goal is to improve quality of life for both the patient and their family by addressing physical discomfort, emotional strain, and the practical challenges that come with navigating a serious health condition.",
+    "keywords": ["palliative", "serious illness", "pain management", "symptom relief", "quality of life", "support", "chronic illness", "terminal", "diagnosis"]
   },
   {
-    "id": "monthly-essential",
-    "title": "Monthly Essential Plan",
-    "shortDesc": "Ongoing monthly coordination for individuals who need consistent, reliable healthcare support.",
-    "longDesc": "The Monthly Essential Plan is built for people who need a steady hand navigating the healthcare system month to month. Included is ongoing coordination, proactive provider communication, medication updates as things change, and regular summaries for family members or caregivers who want to stay informed. This is not a 24/7 service and does not cover emergencies — it's thoughtful, professional support during business hours. Hours do not roll over between months.",
-    "cost": 350,
-    "keywords": ["monthly", "ongoing", "plan", "subscription", "coordination", "regular", "family", "caregiver", "summary", "essential", "routine", "recurring", "support", "management"]
+    "id": "post-hospital-recovery",
+    "title": "Post-Hospital Recovery",
+    "shortDesc": "Hands-on support to ensure a safe, smooth recovery after a hospital or facility stay.",
+    "longDesc": "The period immediately following a hospitalization is one of the highest-risk times for complications and readmission. Patients are often discharged with new medications, follow-up appointments, and care instructions that can feel overwhelming to manage alone. Understanding what to expect, keeping track of changes in condition, and maintaining clear communication with the care team are all critical factors in a recovery that stays on course.",
+    "keywords": ["discharge", "hospital", "transition", "post-hospital", "recovery", "readmission", "follow-up", "home", "rehab", "skilled nursing", "medication reconciliation", "care plan", "post-acute"]
   },
   {
-    "id": "monthly-comprehensive",
-    "title": "Monthly Comprehensive Plan",
-    "shortDesc": "Full-service monthly care coordination with expanded hours and priority access.",
-    "longDesc": "For patients managing complex, ongoing health needs, the Monthly Comprehensive Plan offers the most complete level of support available. You'll receive all the benefits of the Essential Plan — ongoing coordination, provider communication, medication tracking, and family summaries — with more available hours and priority scheduling. Ideal for those managing multiple conditions, recent hospitalizations, or active care transitions. Hours do not roll over, this is not a 24/7 or emergency service, and all work is scheduled in advance.",
-    "cost": 575,
-    "keywords": ["monthly", "ongoing", "plan", "subscription", "comprehensive", "full service", "priority", "complex", "multiple conditions", "hospitalization", "transition", "recurring", "support", "management", "premium"]
+    "id": "preventative-health",
+    "title": "Preventative Health",
+    "shortDesc": "Proactive support to ensure your screenings, immunizations, and preventative appointments are up to date and never missed.",
+    "longDesc": "Preventative care is one of the most effective tools for maintaining long-term health and catching potential issues before they become serious. Recommended screenings, immunizations, and routine check-ups vary based on age, gender, family history, and risk factors — and it is easy for them to fall behind without a clear picture of what is due and when. Staying current with preventative care reduces risk, supports early detection, and gives patients a stronger foundation for their overall health.",
+    "keywords": ["preventative", "prevention", "screenings", "immunizations", "vaccines", "annual", "check-up", "proactive", "mammogram", "colonoscopy", "physical", "risk", "health maintenance"]
+  },
+  {
+    "id": "symptom-triage",
+    "title": "Symptom Triage",
+    "shortDesc": "Professional guidance to help you understand your symptoms and determine the right next step in care.",
+    "longDesc": "When a new or changing symptom appears, it is not always clear whether it warrants a trip to urgent care, a call to your doctor, or simply watchful waiting. Symptom triage helps patients make that determination by evaluating what they are experiencing in the context of their health history and current condition. Having a knowledgeable professional to think through symptoms with can prevent unnecessary visits, reduce anxiety, and ensure that concerning signs are not overlooked.",
+    "keywords": ["symptoms", "triage", "sick", "urgent", "guidance", "evaluation", "advice", "nurse", "sick call", "care guidance", "what to do", "urgent care", "ER", "emergency"]
+  },
+  {
+    "id": "wellness-planning",
+    "title": "Wellness Planning",
+    "shortDesc": "Personalized wellness planning to help you build sustainable habits and optimize your overall well-being.",
+    "longDesc": "Wellness planning takes a proactive, whole-person approach to health — looking beyond the absence of illness toward what it means to feel and function at your best. This includes evaluating areas like nutrition, sleep, physical activity, and stress, and identifying sustainable changes that align with a person's goals and lifestyle. For many people, having a structured plan and a knowledgeable resource to help them stay on track makes the difference between intentions and lasting results.",
+    "keywords": ["wellness", "lifestyle", "healthy", "habits", "nutrition", "sleep", "stress", "activity", "exercise", "well-being", "goals", "planning", "holistic", "balance"]
+  },
+  {
+    "id": "womens-health",
+    "title": "Women's Health",
+    "shortDesc": "Comprehensive, individualized support for women's health concerns including hormonal health, reproductive health, and weight and metabolic health.",
+    "longDesc": "Women's health spans a wide range of concerns across every stage of life — from reproductive health and hormonal shifts to metabolic changes and conditions like PCOS or thyroid dysfunction. Many of these issues are underdiagnosed or dismissed, leaving women without clear answers or a path forward. Understanding what is happening in your body, what questions to ask, and what options are available is the foundation for getting care that truly fits your needs.",
+    "keywords": ["women's health", "hormones", "hormonal", "reproductive", "fertility", "menopause", "perimenopause", "thyroid", "PCOS", "metabolic", "weight", "estrogen", "progesterone", "women"]
   }
 ]

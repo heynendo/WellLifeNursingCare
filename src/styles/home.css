@@ -44,14 +44,6 @@
 .home > .hero > .right{
     align-content: center;
 }
-/*.headshot{
-    border: solid 5px var(--color2);
-    border-radius: 100%;
-    width: 100%;
-    max-width: 500px;
-    aspect-ratio: 1;
-    box-shadow: var(--shadow1);
-}*/
 .headshot-container {
     position: relative;
     width: 100%;
@@ -68,7 +60,6 @@
     aspect-ratio: 1;
     display: block;
 }
-
 .headshot-loader {
     position: absolute;
     inset: 0;
@@ -112,7 +103,7 @@
 .home > .mid > .about-cards > .card{
     display: grid;
     width: 325px;
-    min-height: 375px;
+    min-height: 325px;
     border-radius: 10px;
     background: var(--color1-gradient);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
@@ -232,7 +223,7 @@
     }
     .home > .mid > .about-cards > .card{
         width: 100%;
-        min-height: 325px;
+        min-height: 275px;
     }
     .home > .lower > .reviews{
         flex-direction: column;

@@ -7,7 +7,7 @@ import EmailLogo from '../components/icons/EmailLogo'
 
 export default function Contact(){
     return(
-        <div className="contact page-layout">
+        <main className="contact page-layout">
             <div className="top">
                 <h1>Support Starts Here</h1>
                 <h3>Contact to discuss services, availability, or the next steps in your care.</h3>
@@ -39,12 +39,12 @@ export default function Contact(){
                         </div>
                     </div>
                 </div>
-                <p>Getting in touch is easy. Use the contact form, send an email, or call during available hours. Now explain more info about preferences of contact and availability. This would be a good place to add any other info you think is important for clients to know that they should include in their message that isn't already specified. </p>
+                <p>Getting in touch is easy. Use the contact form, send an email, or feel free to text or call. Filling out the form below gives us the best chance to understand your needs from the start. Every inquiry is responded to personally — no automated replies, no call centers.</p>
             </div>
             <div className="lower">
                 <ContactForm />
                 <Footer />
             </div>
-        </div>
+        </main>
     )
 }

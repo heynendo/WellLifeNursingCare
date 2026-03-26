@@ -88,12 +88,6 @@ export default function Services(){
                 />
                 <h3>{selectedService.title}</h3>
             </div>
-            {width > 600 &&
-            <div className='right'>
-                <span className='cost'>Cost:</span>
-                <h3>${selectedService.cost}</h3>
-            </div>
-            }
         </div>
         <div className='container'>
             <div className='left'>
@@ -105,17 +99,11 @@ export default function Services(){
             </div>
             }
         </div>
-        {width < 600 &&
-        <div className='bottom-cost'>
-            <span className='cost'>Cost:</span>
-            <h3>${selectedService.cost}</h3>
-        </div>
-        }
     </motion.div>
 )
 
     return(
-        <div className="services page-layout">
+        <main className="services page-layout">
             <div className='top'
                 style={{
                     backgroundImage: `url(${servicesBackground})`,
@@ -142,19 +130,19 @@ export default function Services(){
                 <div className='pricing'>
                 {[
                     {
-                        title: "Initial Virtual Consultation Rate",
+                        title: "Initial Virtual Consultation",
                         text: "Your first virtual visit typically lasts 30 to 60 minutes and includes a comprehensive health assessment, review of your medical history, and a personalized care plan tailored to your needs.",
-                        price: "$150-200"
+                        price: "$150 - $250"
                     },
                     {
                         title: "Quick Care Rate",
-                        text: "pricing info",
-                        price: "$100-200+"
+                        text: "A focused virtual consultation designed for time-sensitive concerns. This visit covers targeted symptom evaluation, straightforward lab result review, and medication adjustment support — giving you prompt, professional guidance without the wait.",
+                        price: "$75 - $125"
                     },
                     {
-                        title: "Insurance Approval Project",
-                        text: "pricing info",
-                        price: "$200-300+"
+                        title: "Nurse Navigation Services",
+                        text: "Personalized guidance and coordination through every step of your healthcare journey. This includes coordinating appointments, explaining medical information, facilitating communication between providers, and ensuring your care plan is followed smoothly.",
+                        price: "$200 - $300"
                     }
                 ].map((card, index) => (
                     <motion.div
@@ -175,6 +163,7 @@ export default function Services(){
                     </motion.div>
                 ))}
             </div>
+            <p className='disclaimer'><span>Disclaimer</span>: Pricing categories are an estimate, final prices will range based on the patient's individual needs</p>
             </div>
             <div className='lower'>
                 <div className='payment-options'>
@@ -204,6 +193,6 @@ export default function Services(){
                 </div>
                 <Footer />
             </div>
-        </div>
+        </main>
     )
 }

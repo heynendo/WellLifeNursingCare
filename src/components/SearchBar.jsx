@@ -15,6 +15,7 @@ export default function SearchBar({ searchValue, setSearchValue }){
                 color='#4281A4'
             />
             <input 
+                id='search'
                 ref={inputRef}
                 placeholder="search"
                 value={searchValue}
