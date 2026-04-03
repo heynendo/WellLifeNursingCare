@@ -10,16 +10,19 @@ const SERVICES = ServicesList.map((service) => service.title)
 
 const PREFERRED_CONTACT_OPTIONS = ["Email", "Text", "Call"]
 
+const defaultFormData = {
+  fullName: "",
+  phoneNumber: "",
+  emailAddress: "",
+  preferredContact: "",
+  servicesOfInterest: [],
+  healthJourneyPriority: "",
+  message: "",
+}
+
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
-    fullName: "",
-    phoneNumber: "",
-    emailAddress: "",
-    preferredContact: "",
-    servicesOfInterest: [],
-    healthJourneyPriority: "",
-    message: "",
-  })
+  const [formData, setFormData] = useState(defaultFormData)
+  const [submit, setSubmit] = useState(null)
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -37,9 +40,37 @@ export default function ContactForm() {
     setFormData((prev) => ({ ...prev, phoneNumber: formatted }))
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log("Form submitted:", formData)
+ 
+    const payload = {
+      name: formData.fullName,
+      phone: formData.phoneNumber,
+      email: formData.emailAddress,
+      preferredContact: formData.preferredContact,
+      servicesOfInterest: formData.servicesOfInterest,
+      mostImportant: formData.healthJourneyPriority,
+      message: formData.message,
+    }
+ 
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+ 
+      if (response.ok) {
+        setFormData(defaultFormData)
+        setSubmit(true)
+      } else {
+        console.error("Failed to send message:", await response.text())
+        setSubmit(false)
+      }
+    } catch (err) {
+      console.error("Error submitting form:", err)
+      setSubmit(false)
+    }
   }
 
   return (
