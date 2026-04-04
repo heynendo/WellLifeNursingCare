@@ -8,6 +8,7 @@ export default function Dropdown({
     value = options[0],
     onChange,
     disabled = false,
+    className = ''
 }) {
     const [isOpen, setIsOpen] = useState(false)
     const dropdownRef = useRef(null)
@@ -34,7 +35,7 @@ export default function Dropdown({
     return (
         <>
             <div
-                className={`custom-dropdown ${disabled ? "disabled" : ""} ${isOpen ? "open" : ""}`}
+                className={`custom-dropdown ${disabled ? "disabled" : ""} ${isOpen ? "open" : ""} ${className}`}
                 onClick={handleToggle}
                 ref={dropdownRef}
             >
