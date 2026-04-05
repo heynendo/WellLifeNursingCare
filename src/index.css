@@ -144,6 +144,7 @@ button:hover > h3{
 .not-found > p{
   color: var(--color1);
   margin: 50px;
+  text-align: center;
 }
 .not-found > button:hover{
   background-color: var(--color1);
