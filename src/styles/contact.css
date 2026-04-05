@@ -84,6 +84,7 @@
     justify-content: center;
     cursor: pointer;
     transition: 0.2s;
+    text-decoration: none;
 }
 .contact > .mid > .info-cards > .card a:hover{
     font-weight: 800;
