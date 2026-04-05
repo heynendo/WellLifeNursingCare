@@ -21,12 +21,12 @@ export default function Contact(){
                             <div className='phone'>
                                 <h3>Phone</h3>
                                 <Contact1 rotation='45' size="40px"/>
-                                <span onClick={() => window.location.href = 'tel:7089298515'}>708-929-8515</span>
+                                <a href="tel:7089298515">708-929-8515</a>
                             </div>
                             <div className='email'>
                                 <h3>Email</h3>
                                 <EmailLogo size='35px' color='#4281A4'/>
-                                <span onClick={() => window.location.href = 'mailto:info@welllifenursingcare.com'}>info@welllifenursingcare.com</span>
+                                <a href="mailto:info@welllifenursingcare.com">info@welllifenursingcare.com</a>
                             </div>
                         </div>
                     </div>

@@ -73,7 +73,7 @@
     aspect-ratio: 1;
     align-self: center;
 }
-.contact > .mid > .info-cards > .card span{
+.contact > .mid > .info-cards > .card a{
     color: var(--color2);
     height: 50px;
     font-weight: 700;
@@ -85,11 +85,11 @@
     cursor: pointer;
     transition: 0.2s;
 }
-.contact > .mid > .info-cards > .card span:hover{
+.contact > .mid > .info-cards > .card a:hover{
     font-weight: 800;
     padding-bottom: 3px;
 }
-.contact > .mid > .info-cards > .card .phone span{
+.contact > .mid > .info-cards > .card .phone a{
     font-size: 1.1em;
     letter-spacing: 0.3em;
 }

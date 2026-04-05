@@ -148,12 +148,13 @@
     color: var(--color3);
     text-align: left;
 }
-.services > .mid > .pricing > .pricing-card > h1{
+.services > .mid > .pricing > .pricing-card > .price{
     color: var(--color3);
     min-height: 100px;
     font-weight: 900;
     font-size: 2.5em;
     text-align: center;
+    align-content: center;
     letter-spacing: -0.05em;
     line-height: 50px;
     padding: 0 2px;

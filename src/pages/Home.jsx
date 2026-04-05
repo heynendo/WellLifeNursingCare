@@ -29,6 +29,7 @@ export default function Home(){
                                 className="headshot"
                                 src="/headshot.png"
                                 onLoad={() => setHeadshotLoaded(true)}
+                                alt="Lynnette Kwiatt RN MSN, founder of Well Life Nursing Care"
                             />
                             <AnimatePresence>
                                 {!headshotLoaded && (
@@ -67,6 +68,7 @@ export default function Home(){
                             className="headshot"
                             src="/headshot.png"
                             onLoad={() => setHeadshotLoaded(true)}
+                            alt="Lynnette Kwiatt RN MSN, founder of Well Life Nursing Care"
                         />
                         <AnimatePresence>
                             {!headshotLoaded && (

@@ -10,6 +10,7 @@ import MotionWrapper from "./functions/MotionWrapper"
 import Services from './pages/Services'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 
 function AppRoutes(){
   const location = useLocation()
@@ -34,6 +35,7 @@ function AppRoutes(){
         <Route path='/about' element={<MotionWrapper> <About/> </MotionWrapper>}/>
         <Route path='/services' element={<MotionWrapper> <Services/> </MotionWrapper>}/>
         <Route path='/contact' element={<MotionWrapper> <Contact/> </MotionWrapper>}/>
+        <Route path='*' element={<MotionWrapper><NotFound /></MotionWrapper>} />
       </Route>
     </Routes>
     </AnimatePresence>

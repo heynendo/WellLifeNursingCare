@@ -135,6 +135,22 @@ button:hover > h3{
 .page-layout > .lower{
   background: var(--color1-gradient);
 }
+.not-found{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+.not-found > p{
+  color: var(--color1);
+  margin: 50px;
+}
+.not-found > button:hover{
+  background-color: var(--color1);
+}
+.not-found > button:hover > h3{
+  color: var(--color3);
+}
 @media (max-width: 700px){
   h2{
     font-size: 1.5em;

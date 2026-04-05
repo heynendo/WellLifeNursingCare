@@ -9,7 +9,11 @@ export default function About(){
             <div className='top'>
                 <h1>Professional Nursing Care with a Personal Touch</h1>
                 <div className='bio'>
-                    <img className="headshot" src="/headshot.png"/>
+                    <img 
+                        className="headshot" 
+                        src="/headshot.png"
+                        alt="Lynnette Kwiatt RN MSN, founder of Well Life Nursing Care" 
+                    />
                     <div className='container'>
                         <div className='head'>
                             <h4>Lynnette Kwiatt</h4>

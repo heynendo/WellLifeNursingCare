@@ -159,7 +159,7 @@ export default function Services(){
                     >
                         <h3>{card.title}</h3>
                         <p>{card.text}</p>
-                        <h1>{card.price}</h1>
+                        <span className='price'>{card.price}</span>
                     </motion.div>
                 ))}
             </div>
