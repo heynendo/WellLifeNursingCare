@@ -4,9 +4,9 @@ import Dropdown from "./Dropdown"
 import '../styles/custom-dropdown.css'
 import MultiselectDropdown from "./MultiselectDropdown"
 import ServicesList from '../data/service-list.json'
+import { AnimatePresence, motion } from "motion/react"
 
-
-const SERVICES = ServicesList.map((service) => service.title)
+const SERVICES = [...ServicesList.map((service) => service.title), "Other"]
 
 const PREFERRED_CONTACT_OPTIONS = ["Email", "Text", "Call"]
 
@@ -236,17 +236,33 @@ export default function ContactForm() {
             <button type="submit" disabled={loading}>
                 <h3>{loading ? "Sending..." : "Send"}</h3>
             </button>
-            {submit !== null && 
-            <div className="popout" onClick={() => setSubmit(null)}>
-                <div className="window" onClick={(e) => e.stopPropagation()}>
-                    <h1>{submit === true ? 'Message Sent!' : 'Message Failed to Send'}</h1>
-                    {submit === false &&
-                    <span>Looks like there was an issue, try again or contact us directly by phone or email.</span>
-                    }
-                    <button onClick={() => setSubmit(null)}><h3>Close</h3></button>
-                </div>
-            </div>
-            }
+            <AnimatePresence>
+                {submit !== null &&
+                    <motion.div
+                        className="popout"
+                        onClick={() => setSubmit(null)}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                    >
+                        <motion.div
+                            className="window"
+                            onClick={(e) => e.stopPropagation()}
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 0 }}
+                            transition={{ duration: 0.3 }}
+                        >
+                            <h1>{submit === true ? 'Message Sent!' : 'Message Failed to Send'}</h1>
+                            {submit === false &&
+                                <span>Looks like there was an issue, try again or contact us directly by phone or email.</span>
+                            }
+                            <button type="button" onClick={() => setSubmit(null)}><h3>Close</h3></button>
+                        </motion.div>
+                    </motion.div>
+                }
+            </AnimatePresence>
         </form>
         </div>
     )
