@@ -5,8 +5,7 @@ Designed and developed for an independent nursing care provider launching their 
 ---
 ## Features
 
-**Service Options**: 
-Searchable service options with clear descriptions to help possible patients understand the types of services the nurse can provide.
+**Service Options**: Searchable service options with clear descriptions to help possible patients understand the types of services the nurse can provide.
 
 **Pricing Plans**: Set pricing categories to clarify what possible costs could be.
 
@@ -15,5 +14,5 @@ Searchable service options with clear descriptions to help possible patients und
 **Email Forwarding**: Form that takes contact info and services of interest to send to forward to the nurse.
 
 ---
-### Visit the site at [welllifenursingcare.com](https://www.welllifenursingcare.com/)
+### Visit the site at <a href="https://www.welllifenursingcare.com/" target="_blank">welllifenursingcare.com</a>
 ---
