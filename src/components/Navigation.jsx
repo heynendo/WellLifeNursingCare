@@ -7,6 +7,7 @@ import { Contact1, Contact2, Exit2, HamburgerMenu2, MedicalBadge1, Profile2 } fr
 import { getWindowWidth } from "../functions/GetWindowWidth"
 import HouseIcon from "./icons/HouseIcon"
 import ProfileIcon from "./icons/ProfileIcon"
+import FacebookLogo from "./icons/FacebookLogo"
 
 export default function Navigation(){
 
@@ -80,6 +81,13 @@ export default function Navigation(){
                 <Link to='/about'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'About' ? 'selected' : ''}>About</h4></Link>
                 <Link to='/services'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'Services' ? 'selected' : ''}>Services</h4></Link>
                 <Link to='/contact'><h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}} className={currentPage === 'Contact' ? 'selected' : ''}>Contact</h4></Link>
+                <a 
+                    href="https://www.facebook.com/profile.php?id=61588522392876"
+                    target="_blank"
+                    rel="noopener noreferrer"    
+                >
+                    <h4 style={{color: colorSwitch ? colorSet.color3 : colorSet.color2}}>Facebook</h4>
+                </a>
                 </>
                 :
                 <div className="mobile"
@@ -208,6 +216,18 @@ export default function Navigation(){
                         <h4>Contact</h4>
                     </Link>
                     }
+                    <a
+                        href="https://www.facebook.com/profile.php?id=61588522392876"
+                        target="_blank"
+                        rel="noopener noreferrer" 
+                        style={{ background: colorSwitch ? colorSet.color3 : colorSet.color4}}
+                    >
+                        <FacebookLogo
+                            rotation="45"
+                            className='nav-icons'
+                        />
+                        <h4>Facebook</h4>
+                    </a>
                 </motion.div>
             )}
             </AnimatePresence>

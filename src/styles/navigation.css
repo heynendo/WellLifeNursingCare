@@ -27,6 +27,10 @@
 .navigation > .right > a > .selected{
     border-bottom: 5px solid var(--color2);
 }
+.navigation .right,
+.navigation .right > a{
+    flex-shrink: 0;
+}
 .navigation a{
     text-decoration: none;
 }

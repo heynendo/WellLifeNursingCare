@@ -6,6 +6,7 @@ import { getWindowWidth } from "../functions/GetWindowWidth"
 import { useNavigate } from "react-router-dom"
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
+import GoogleLogo from "../components/icons/GoogleLogo"
 
 export default function Home(){
 
@@ -137,7 +138,13 @@ export default function Home(){
             </div>
             <div className="lower">
                 <div className="reviews">
-                    <h2>See Why Patients Trust Us</h2>
+                    <div className="review-head">
+                        <h2>See Why Patients Trust Us</h2>
+                        <button onClick={() => window.open('https://www.google.com/maps/place/Well+Life+Nursing+Care/data=!4m2!3m1!1s0x0:0x15764f488775bbf0?sa=X&ved=1t:2428&ictx=111', '_blank')}>
+                            <h3>More Reviews</h3>
+                            <GoogleLogo />
+                        </button>
+                    </div>
                     <div className="break"/>
                     <div className="main-review">
                         <div className="container">

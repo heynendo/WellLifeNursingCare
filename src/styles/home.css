@@ -157,14 +157,35 @@
     gap: 25px;
     margin: 50px 25px;
 }
-.home > .lower > .reviews > h2{
+.home > .lower > .reviews > .review-head{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    min-height: 150px;
+    gap: 25px;
+}
+.home > .lower > .reviews > .review-head > button{
+    display: flex;
+    background-color: var(--color3);
+    height: auto;
+    min-height: 65px;
+    margin: 7.5px;
+    padding: 0 25px;
+    gap: 25px;
+    align-items: center;
+}
+.home > .lower > .reviews > .review-head > button > h3{
+    color: var(--color2);
+}
+.home > .lower > .reviews > .review-head > h2{
     color: var(--color3);
     max-width: 325px;
     text-align: right;
+    margin: 0 7.5px;
 }
 .home > .lower > .reviews > .break{
     width: 5px;
-    height: 200px;
+    height: 250px;
     background-color: var(--color3);
 }
 .home > .lower > .reviews > .main-review{
